@@ -89,7 +89,7 @@ function getCurrentSlideNo() {
 // go full screen
 function fullScreenMode() {
   presentationController.classList.add("full-screen");
-  presentationController.style.fontSize = "1.8em";
+  //presentationController.style.fontSize = "1.8em";
   toFullScreenBtn.classList.remove("show");
   toSmallScreenBtn.classList.add("show");
 
