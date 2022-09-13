@@ -1,0 +1,2740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+      <img src="image/python-logo.svg" class="logo">
+      <div id="presentation-area">
+        <section class="presentation">
+          <!--<img src="image/js_logo.svg" class="logo">-->
+
+          <!--slide 1-->
+          <div class="slide show">
+            <div class="heading">
+              Présentation sur Python
+            </div>
+            <div class="content grid center">
+              <h3 class="title">
+                Algorithme Python <br/>
+              </h3>
+              <p class="sub-title">
+                Concepts de base et avancés
+              </p>
+              <p>Mon portefeuille</p>
+              <p><a href="https://kilian-schropp.surge.sh/">https://kilian-schropp.surge.sh/</a></p>
+            </div>
+          </div>
+
+          <!--slide 2-->
+          <div class="slide">
+            <div class="heading">
+              Pourquoi les gens utilisent-ils Python ?
+            </div>
+            <div class="content">
+              <ul>
+                <li><b>Qualité logicielle:</b></li><p style="font-size: 1em">Le code Python est conçu pour être lisible, et donc réutilisable et maintenable, bien plus que les langages de script traditionnels</p>
+                <li><b>Productivité des développeurs:</b></li><p style="font-size: 1em">Le code Python est généralement d'un tiers à un cinquième de la taille du code C++ ou Java équivalent. Cela signifie qu'il y a moins à taper, moins à déboguer et moins à maintenir.</p>
+                <li><b>Portabilité des programmes:</b></li><p style="font-size: 1em">La plupart des programmes Python s'exécutent sans modification sur toutes les principales plates-formes informatiques.</p>
+                <li><b>Bibliothèques de soutien:</b></li><p style="font-size: 1em">Python peut être étendu à la fois avec des bibliothèques internes et une vaste collection de logiciels de support d'applications tiers</p>
+                <li><b>Intégration des composants:</b></li><p style="font-size: 1em">Les scripts Python peuvent facilement communiquer avec d'autres parties d'une application, grâce à divers mécanismes d'intégration.</p>              
+              </ul>
+            </div>
+          </div>
+
+          <!--slide 3-->
+          <div class="slide">
+            <div class="heading">
+              Utilisation
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                <img src="image/popularity.svg" style="width: 60%;">
+              </p>
+            </div>
+          </div>
+
+          <!--slide 4-->
+          <div class="slide">
+            <div class="heading">
+              OK, mais quel est l'inconvénient ?
+            </div>
+            <div class="content">
+              <p>Le seul inconvénient universel significatif de Python est que, tel qu'il est actuellement implémenté, 
+                sa vitesse d'exécution n'est pas toujours aussi rapide que celle des programmes entièrement compilés et de niveau inférieur
+              </p>
+              <img src="image/pythonMeme.svg" style="width:73%">
+            </div>
+          </div>
+
+          <!--slide 5-->
+          <div class="slide">
+            <div class="heading">
+              Que puis-je faire avec Python ?
+            </div>
+            <div class="content">
+              <p>Il est couramment utilisé dans divers domaines, en tant qu'outil de scriptage d'autres composants
+                 et de mise en œuvre de programmes autonomes. En fait, en tant que langage polyvalent, les rôles 
+                 de Python sont pratiquement illimités : vous pouvez l'utiliser pour tout, du <b>développement de 
+                  sites Web</b> et des <b>jeux video</b> à la <b>robotique</b> et au <b>contrôle de vaisseaux spatiaux</b>
+              </p>
+              <img src="image/toTheMoon.svg" style="width:21%;">
+              <img src="image/pacman.svg" class="html-css-logo" style="left: 50%; top:55%">
+            </div>
+          </div>
+
+          <!--slide 6-->
+          <div class="slide">
+            <div class="heading">
+              Quels sont les points forts de Python ?
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">C'est gratuit</p>
+              <p class="sub-title">C'est portable</p>
+              <p class="sub-title">C'est mélangeable (c++, c, java etc.)</p>
+              <p class="sub-title">C'est relativement facile à utiliser</p>
+              <p class="sub-title">C'est relativement facile à apprendre</p>
+            </div>
+          </div>
+
+          <!--slide 7-->
+          <div class="slide">
+            <div class="heading">
+              Quiz
+            </div>
+            <div class="content grid center">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSc0PT0l4ncrrQWAjJ9Ud4ugRND__mHORwD3v4AOyOwTqtK4gg/viewform?embedded=true"
+                width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+          <!--slide 8-->
+          <div class="slide">
+            <div class="heading">
+              Comments
+            </div>
+            <div class="content">
+              <p>Les commentaires de type hash-mark (#) sont le moyen le plus élémentaire de documenter votre code. Python ignore simplement tout le texte qui suit un #,
+                Vous pouvez donc faire suivre ce caractère de n'importe quel mot ou description utile aux programmeurs
+              </p>
+              <div class="code" style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008000">#This is a comment</span>
+                  <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;Hello, World!&quot;</span>)</pre>
+              </div>
+              <p>Les commentaires peuvent être placés à la fin d'une ligne, et Python ignorera le reste de la ligne</p>
+              <div class="code" style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;Hello, World!&quot;</span>) <span style="color: #008000">#This is a comment </span></pre>
+              </div>
+              <p>Un commentaire ne doit pas nécessairement être un texte qui explique le code, il peut également être utilisé pour empêcher Python d'exécuter du code</p>
+              <div class="code" style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008000">#print(&quot;Hello, World!&quot;)</span>
+                  <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;Cheers, Mate!&quot;</span>)</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 9-->
+          <div class="slide">
+            <div class="heading">
+              Case Sensitivity
+            </div>
+            <div class="content">
+              <p> 
+                Python fait toujours attention à la casse dans les programmes, aussi bien dans les noms que vous créez que dans les mots réservés. 
+                Par exemple, les noms X et x font référence à deux variables différentes..
+              </p>
+              <img src="image/case-sensetiv.svg" style="width: 60%; padding-left: 10%;">
+            </div>
+          </div>
+
+          <!--slide 10-->
+          <div class="slide">
+            <div class="heading">
+              Variables
+            </div>
+            <div class="content">
+              <p>Une variable est simplement une zone de stockage.
+                 Vous placez des éléments dans vos zones de stockage (variables) 
+                 afin de pouvoir les utiliser et les manipuler dans vos programmes.
+              </p>
+              <img src="image/variable.svg" style="width: 82%; padding-left: 15%;">
+            </div>
+          </div>
+
+          <!--slide 11-->
+          <div class="slide">
+            <div class="heading">
+              Variables
+            </div>
+            <div class="content">
+              <p>Une variable est le nom d'une cellule de mémoire. 
+                  Elle est dite "variable" car la valeur contenue dans la cellule peut changer. 
+                  Chaque cellule de mémoire a une adresse.
+              </p>
+              <img src="image/boxInRam.svg" style="width: 90%; padding-left: 15%;">
+            </div>
+          </div>
+
+          <!--slide 12-->
+          <div class="slide">
+            <div class="heading">
+              Création de variables
+            </div>
+            <div class="content">
+              <p>Python n'a pas de commande pour déclarer une variable.
+                Une variable est créée au moment où vous lui attribuez une valeur pour la première fois.</p>
+              <div class="code" style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  x = 5
+                  y = <span style="color: #a31515">&quot;John&quot;</span>
+                  <span style="color: #008000"># est la même chose que</span>
+                  y = <span style="color: #a31515">&#39;John&#39;</span>
+                  <span style="color: #0000ff">print</span>(x)
+                  <span style="color: #0000ff">print</span>(y)</pre>
+              </div>
+              <p>Les noms de variables sont sensibles à la casse</p>
+              <div class="code" style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                a = 4
+                A = <span style="color: #a31515">&quot;Sally&quot;</span>
+                <span style="color: #008000">#A ne remplacera pas a </span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 13-->
+          <div class="slide">
+            <div class="heading">
+              Assignment Statement
+            </div>
+            <div class="content">
+              <p>Le tableau suivant illustre les différentes formes d'instructions d'affectation en Python, ainsi que leurs modèles syntaxiques.</p>
+              <table class="tg" style="width:90%;">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Opération</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Interpretation</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">spam = 'Spam'</td>
+                    <td class="tg-0lax">Forme de base</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">spam, ham = 'yum', 'YUM'</td>
+                    <td class="tg-0lax">Assignation de tuple (positionnel)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">[spam, ham] = ['yum', 'YUM']</td>
+                    <td class="tg-0lax">Assignation de liste (positionnelle)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a, b, c, d = 'spam'</td>
+                    <td class="tg-0lax">Attribution des séquences, généralisée</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a, *b = 'spam'</td>
+                    <td class="tg-0lax">Déballage de la séquence étendue</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">spam = ham = 'lunch'</td>
+                    <td class="tg-0lax">Affectation à des cibles multiples</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">spams += 42</td>
+                    <td class="tg-0lax">Affectation augmentée (équivalent à spams = spams + 42)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!--slide 14-->
+          <div class="slide">
+            <div class="heading">
+              Assignment Statement
+            </div>
+            <div class="content">
+              <p>print() affiche un message sur la console
+              </p>
+              <iframe
+                frameborder="0"
+                height="92%"  
+                src="https://onecompiler.com/embed/python/3yenf452t" 
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 15-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>En Python, les Integers sont des nombres entiers nuls, positifs ou négatifs, 
+                sans partie fractionnaire et ayant une précision illimitée, par exemple 0, 100, -10. 
+                Les éléments suivants sont des littéraux entiers valides en Python. </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                zero = 0
+                hundred = 100
+                minusTen = -10
+                largeNumber=5000000000000000000000000000000000000000000000000000000</pre>
+              </div>
+              <p>Les nombres entiers peuvent être des valeurs binaires, octales et hexadécimales</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                binary = 0b11011000 <span style="color: #008000"># Les littéraux binaires, commencent par un 0b ou 0B de tête, suivi de chiffres binaires (0-1) decimal=216</span>
+                <span style="color: #0000ff">print</span>(binary) <span style="color: #008000">#216</span>
+                octal = 0o12 <span style="color: #008000"># Octal commencent par un 0o ou 0O (zéro et la lettre o minuscule ou majuscule), suivi d&#39;une chaîne de chiffres (0-7). </span>
+                <span style="color: #0000ff">print</span>(octal) <span style="color: #008000">#10</span>
+                hexadecimal = 0x12 <span style="color: #008000"># Les hexadécimaux commencent par un 0x ou 0X, suivi d&#39;une chaîne de chiffres hexadécimaux (0-9 et A-F)</span>
+                <span style="color: #0000ff">print</span>(hexadecimal) <span style="color: #008000">#18</span></pre>
+              </div>
+              <a href="https://www.rightlobemath.com/digitalabacus/abacus_rebuild.html">decimal, </a><a href="https://codepen.io/evanmags/full/ZNWMJW">binary, </a><a href="https://codepen.io/jakealbaugh/full/MKdZrb">hex</a>
+            </div>
+          </div>
+
+          <!--slide 16-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>Exercice : Ecrivez un programme en Python pour échanger deux nombres
+              </p>
+              <img src="image/swapping.svg" style="width: 75%; padding-left: 15%; padding-bottom: 1%;">
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008000">#Example:</span>
+                  a,b = 39, 25
+                  <span style="color: #008000">#après échange</span>
+                  <span style="color: #008000">#a = 25, b = 39 </span>
+                  <span style="color: #0000ff">print</span>(a)
+                  <span style="color: #0000ff">print</span>(b)
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 17-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>print() affiche un message sur la console
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/python/3yeqfqkns" 
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 18-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Integers
+            </div>
+            <div class="content">
+              <p>Solution:
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                a = 39
+                b = 25
+                third = a
+                a = b 
+                b = third 
+                <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;variable a=&quot;</span> +str(a)+ <span style="color: #a31515">&quot; ,variable b=&quot;</span> + str(b)) <span style="color: #008000">#str() convertit un entier en une </span>
+                <span style="color: #008000">#chaîne de caractères, je l&#39;expliquerai plus </span>
+                <span style="color: #008000">#en détail prochainement exemple plus complexe</span>
+
+                a = 45
+                b = 105
+                a=a+b  
+                b=a-b  
+                a=a-b  
+                <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;variable a=&quot;</span> +str(a)+ <span style="color: #a31515">&quot; ,variable b=&quot;</span> + str(b));</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 19-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Floating-Point
+            </div>
+            <div class="content">
+              <p>Float, ou "nombre à virgule flottante", est un nombre, positif ou négatif, contenant une ou plusieurs décimales.
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                a = 1.23
+                b = 1.
+                c= 3.14e-10
+                d = 4E210
+                e = 4.0e+210
+
+                x = 1.10
+                y = 1.0
+                z = -35.59</pre>
+              </div>
+              <img src="image/floatingPoint.svg" class="html-css-logo" style="left: 36%; top: 36%; height: 60%; width:60%">
+            </div>
+          </div>
+
+          <!--slide 20-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Les opérateurs arithmétiques sont des opérateurs que vous reconnaîtrez dans l'usage quotidien.
+              </p>
+              <img src="image/arithmetic.svg" class="html-css-logo" style="left: 70%; top:37%;height: 50%;">
+              <table class="tg">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Opérateur</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Explications</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">+</td>
+                    <td class="tg-0lax">x + y</td>
+                    <td class="tg-0lax">Addition/Concaténation</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">-</td>
+                    <td class="tg-0lax">x - y</td>
+                    <td class="tg-0lax">Soustraction</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">*</td>
+                    <td class="tg-0lax">x * y</td>
+                    <td class="tg-0lax">Multiplication</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">/</td>
+                    <td class="tg-0lax">x / y<br></td>
+                    <td class="tg-0lax">Division<br></td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">%</td>
+                    <td class="tg-0lax">x % y</td>
+                    <td class="tg-0lax">Modulo, reste de la division entière</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">//</td>
+                    <td class="tg-0lax">x // y</td>
+                    <td class="tg-0lax">Floor division(division du partie entière et partie fractionnaire???)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">**</td>
+                    <td class="tg-0lax">x ** y</td>
+                    <td class="tg-0lax">Exponentiation</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!--slide 21-->
+          <div class="slide">
+            <img src="image/handRecieving.svg" class="html-css-logo" style="left: 1%; top: 74%;">
+            <img src="image/handGivingMoney.svg" class="html-css-logo" style="left: 70%; top: 74%;">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content grid center">
+              <p class="sub-title">
+                Exercice: Calcule le salaire mensuel si ton salaire brut en tant que développeur est de 32000€ 
+                (réaliste dans la région de Toulouse après la formation) par an. 
+                Le salaire net est d'environ 75% du salaire annuel.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 22-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Calcule le salaire mensuel
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/python/3yeqvd5zf" 
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 23-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>
+                Exercice: Il est actuellement minuit. 
+                Quelle heure sera-t-il après 40 heures passées sur une horloge de 12 heures ? 
+                Utilisez l'opérateur modulo % pour calculer l'heure
+              </p>
+              <img src="image/mod.svg" class="html-css-logo" style="left: 40%; top: unset; height: 60%; width:60%">
+              <iframe id="clock" src="time.html" width="1000" height="1000"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 24-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Calcule le temps
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/python/3yeqvvtw5"
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+          
+          <!--slide 25-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>Solution pour l'exo modulo:
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                hours = 40
+                clock = 12
+                time = 40%12
+                <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;it is &quot;</span>+str(time)+<span style="color: #a31515">&quot; o&#39;clock&quot;</span>)</pre>
+              </div>
+              <p>
+                Il est vrai que cet exercice n'était pas très impressionnant, 
+                mais je n'ai pas pu trouver un meilleur exemple de vie réelle 
+                où les modulo peuvent être compris facilement. 
+              </p>
+              <p>
+                Je voulais quand même montrer le modulo car il n'est pas aussi connu que les autres opérateurs arithmétiques
+              </p>
+              <p class="sub-title">
+                ¯\_(ツ)_/¯
+              </p>
+            </div>
+          </div>
+
+          <!--slide 26-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs arithmétiques
+            </div>
+            <div class="content">
+              <p>
+                Annie Male et Aimée NERVE ne s'entendent pas bien ensemble. 
+                Ils sont tous les deux très mauvais dans le partage et se retrouvent maintenant dans une situation avec 7 pommes. 
+                Elles veulent donner à chaque personne la même quantité de pommes et préfèrent jeter les pommes restantes plutôt 
+                que de les donner à l'autre personne. (Ils n'ont pas non plus la possibilité de couper la pomme).
+              </p>
+              <img src="image/floordivision.svg" class="html-css-logo" style="left: 55%; top: 37%; height: 55%; width:55%">
+              <img src="image/floordivionsApples.svg" class="html-css-logo" style="left: 3%; top: unset; height: 60%; width:60%">
+            </div>
+          </div>
+
+          <!--slide 27-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs d'assignation arithmétiques
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax"><span style="font-weight:bold">Opérateur</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Identique à</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">=</td>
+                        <td class="tg-0lax">x = 5</td>
+                        <td class="tg-0lax">x = 5</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">+=</td>
+                        <td class="tg-0lax">x += 3</td>
+                        <td class="tg-0lax">x = x + 3</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">-=</td>
+                        <td class="tg-0lax">x -= 3</td>
+                        <td class="tg-0lax">x = x - 3</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">*=</td>
+                        <td class="tg-0lax">x *= 3<br></td>
+                        <td class="tg-0lax">x = x * 3<br></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">/=</td>
+                        <td class="tg-0lax">x /= 3</td>
+                        <td class="tg-0lax">x = x / 3</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">%=</td>
+                        <td class="tg-0lax">x %= 3</td>
+                        <td class="tg-0lax">x = x % 3</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">//=</td>
+                        <td class="tg-0lax">x //= 3</td>
+                        <td class="tg-0lax">x = x // 3</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">**=</td>
+                        <td class="tg-0lax">x **= 3</td>
+                        <td class="tg-0lax">x = x ** 3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <p>Ce tableau présente les opérateurs d'assignation qui sont utilisés pour 
+                    attribuer des valeurs aux variables tout en utilisant également des opérateurs arithmétiques
+                  </p>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">5</span>
+                      x <span style="color: #333333">+=</span> <span style="color: #0000DD; font-weight: bold">3</span>
+                      <span style="color: #008800; font-weight: bold">print</span>(x) <span style="color: #888888">#8</span></pre>
+                  </div>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">5</span>
+                      x <span style="color: #333333">/=</span> <span style="color: #0000DD; font-weight: bold">3</span>
+                      <span style="color: #008800; font-weight: bold">print</span>(x)<span style="color: #888888">#1.6666666666666667</span></pre>
+                  </div>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">5</span>
+                      x <span style="color: #333333">-=</span> <span style="color: #0000DD; font-weight: bold">3</span>
+                      <span style="color: #008800; font-weight: bold">print</span>(x) <span style="color: #888888">#2</span></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 28-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Strings
+            </div>
+            <div class="content">
+              <p>Les Strings (chaînes de caractères) sont le type de Python pour représenter du texte.</p>
+              <p>En python, les chaînes de caractères sont entourées soit de guillemets simples, soit de guillemets doubles. 'bonjour' est identique à "bonjour".
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  a = <span style="color: #a31515">&quot;Bonjour&quot;</span>
+                  b = <span style="color: #a31515">&#39;Bonjour&#39;</span></pre>
+              </div>
+              <p>Vous pouvez attribuer une chaîne de caractères multiligne à une variable en utilisant trois guillemets :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  a = <span style="color: #a31515">&quot;&quot;&quot;Lorem ipsum dolor sit amet,</span>
+                  <span style="color: #a31515">consectetur adipiscing elit,</span>
+                  <span style="color: #a31515">sed do eiusmod tempor incididunt</span>
+                  <span style="color: #a31515">ut labore et dolore magna aliqua.&quot;&quot;&quot;</span>
+
+                  b = <span style="color: #a31515">&#39;&#39;&#39;Lorem ipsum dolor sit amet,</span>
+                  <span style="color: #a31515">consectetur adipiscing elit,</span>
+                  <span style="color: #a31515">sed do eiusmod tempor incididunt</span>
+                  <span style="color: #a31515">ut labore et dolore magna aliqua.&#39;&#39;&#39;</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 29-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Escape Sequences in String
+            </div>
+            <div class="content">
+              <p>Le caractère backslash (\) a une fonction particulière dans les strings JavaScript. 
+                Combiné avec le caractère qui le suit, il représente un caractère qui n'est pas autrement représentable dans le string.</p>
+                <div class="flex-container">
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0pky"><span style="font-weight:bold">Sequence</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Caractère représenté</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0pky">\b</td>
+                          <td class="tg-0pky">Retour en arrière</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\t</td>
+                          <td class="tg-0pky">Horizontal tab</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\n</td>
+                          <td class="tg-0pky">Nouvelle ligne</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\f</td>
+                          <td class="tg-0pky">Form feed</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\r</td>
+                          <td class="tg-0pky">Retour à la ligne</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0pky"><span style="font-weight:bold">Sequence</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Caractère représenté</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0pky">\"</td>
+                          <td class="tg-0pky">Guillemets doubles</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\'</td>
+                          <td class="tg-0pky">Apostrophe ou Guillemets simples</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\\</td>
+                          <td class="tg-0pky">Backslash</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\xhh</td>
+                          <td class="tg-0pky">chiffres hexadécimaux</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">\ooo</td>
+                          <td class="tg-0pky">chiffres Octal</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                </div>
+                <img src="image/Exit.svg" class="html-css-logo" style="left: 30%; top: 55%; height: 40%;">
+            </div>
+          </div>
+
+          <!--slide 30-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Strings
+            </div>
+            <div class="content">
+              <img src="image/heart.svg" class="html-css-logo" style="left: 70%; top: 73%;">
+              <img src="image/heart.svg" class="html-css-logo" style="left: 50%; top: 75%;">
+              <img src="image/heart.svg" class="html-css-logo" style="left: 10%; top: 74%;">
+              <p>
+                Exercice : Assignez la phrase de l'exercice à une variable (<b>text</b>) et imprimez-la avec <b>print(text)</b>;
+              </p>
+              <p>
+                Phrase: <span style="color:#a31515">"j'adore" tellement Perl que je n'arrive pas à y croire! Le meilleur langage de programmation au monde, je vous le jure ;)\</span>
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008000">#Perl example:</span>
+                @P=split<span style="color: #a31515">//</span>,<span style="color: #a31515">&quot;.URRUU\c8R&quot;</span>;@d=split<span style="color: #a31515">//</span>,<span style="color: #a31515">&quot;\nrekcah xinU / lreP rehtona tsuJ&quot;</span>;<span style="color: #0000ff">sub </span>p{
+                  @p{<span style="color: #a31515">&quot;r$p&quot;</span>,<span style="color: #a31515">&quot;u$p&quot;</span>}=(P,P);pipe<span style="color: #a31515">&quot;r$p&quot;</span>,<span style="color: #a31515">&quot;u$p&quot;</span>;++$p;($q*=2)+=$f=!fork;map{$P=$P[$f^ord
+                  ($p{$_})&amp;6];$p{$_}=<span style="color: #a31515">/ ^$P/ix</span>?$P:close$_}keys%p}p;p;p;p;p;map{$p{$_}=~<span style="color: #a31515">/^[P.]/</span>&amp;&amp;
+                  close$_}%p;wait <span style="color: #0000ff">until</span>$?;map{<span style="color: #a31515">/^r/</span>&amp;&amp;<span style="color: #a31515">&lt;$_&gt;</span>}%p;$_=$d[$q];sleep rand(2)<span style="color: #0000ff">if</span><span style="color: #a31515">/\S/</span>;<span style="color: #0000ff">print</span>
+                </pre>
+              </div>
+              <p>
+                Perl a été conçu par Larry Wall qui a étudié la linguistique. MDR (la linguistique est l'étude scientifique du langage)
+              </p>
+            </div>
+          </div>
+
+          <!--slide 31-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Strings
+            </div>
+            <div class="content">
+              <p>Échapper la chaîne de caractères
+              </p>
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/python/3yer8gm9b"
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 32-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - String - Concatenation
+            </div>
+            <div class="content">
+              <p>L'une des fonctions intégrées de Python est la possibilité de concaténer des chaînes de caractères. 
+              </p>
+              <p>Using <b>+</b> operator</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  s1=<span style="color: #a31515">&quot;Quoi &quot;</span>
+                  s2=<span style="color: #a31515">&quot;de &quot;</span>
+                  s3=<span style="color: #a31515">&quot;neuf&quot;</span>
+                  s4=s1+s2+s3
+                  <span style="color: #0000ff">print</span>(s4) <span style="color: #008000">#Quoi de neuf ?</span></pre>
+              </div>
+
+              <img src="image/chain.svg" class="html-css-logo" style="left: 40%; top: 50%; width: 60%; height:40%;">
+            </div>
+          </div>
+
+          <!--slide 33-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Booleans
+            </div>
+            <div class="content">
+              <p>Une valeur booléenne représente la vérité ou la fausseté, on ou off, oui ou non. Il n'y a que deux valeurs possibles de ce type.
+                 Les mots réservés <b>true</b> et <b>false</b> évaluent ces deux valeurs</p>
+              <iframe id="lightswitch" src="lightswitch.html" width="100%" height="90%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 34-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - Booleans
+            </div>
+            <div class="content">
+              <p>Les valeurs suivantes se convertissent en, et donc fonctionnent comme, <b>false</b>. 
+                Toutes les <b>autres</b> valeurs sont converties en, et fonctionnent comme, <b>true</b></p>
+              <iframe
+                frameborder="0"
+                height="90%"  
+                src="https://onecompiler.com/embed/python/3yera4gw7" 
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 35-->
+          <div class="slide">
+            <div class="heading">
+              Data Types - None
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p>Le mot-clé None est utilisé pour définir une valeur nulle, ou aucune valeur du tout.</p>
+                  <p>
+                    None n'est pas la même chose que 0, False ou une chaîne vide. 
+                    None est un type de données à part entière (NoneType) et seul None peut être None.
+                  </p>  
+                </div>
+                <div style="width:55%;">
+                  <img src="image/none.svg" style="width: 100%; height:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 36-->
+          <div class="slide">
+            <div class="heading">
+              Liste
+            </div>
+            <div class="content">
+                <div class="flex-container">
+                  <div style="width: 78%;"> 
+                    <p>Une liste est une <b>collection ordonnée de valeurs</b>. Chaque valeur est appelée un élément, 
+                      et chaque élément a une position numérique dans le tableala listeu, appelée son index. Les listes 
+                      Python sont non typés : un élément de tableau peut être de <b>n'importe quel type</b>, et 
+                      différents éléments d'un même tableau peuvent être de types différents. 
+                    </p>
+                  </div>
+                  <div style="width:20%;">
+                    <img src="image/arrayIndex.svg" style="width: 100%;">
+                  </div>
+                </div>
+                <img src="image/arrayboxes.svg" class="html-css-logo" style="left: 10%; top: 58%; height:40%; width:40%">
+            </div>
+          </div>
+
+          <!--slide 37-->
+          <div class="slide">
+            <div class="heading">
+              Creating Lists
+            </div>
+            <div class="content">
+              <p>La façon la plus simple de créer une liste est d'utiliser un littéral de tableau,
+                 qui est simplement une liste d'éléments de tableau séparés par des virgules entre crochets
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  empty = [] <span style="color: #008000"># Un tableau sans éléments</span>
+                  primes = [2, 3, 5, 7, 11] <span style="color: #008000"># Un tableau avec 5 éléments numériques</span>
+                  misc = [ 1.1, True, <span style="color: #a31515">&quot;a&quot;</span>, ] <span style="color: #008000"># 3 éléments de différents types + virgule de fin de ligne</span></pre>
+              </div>
+              <p>
+                Les valeurs d'un littéral de tableau ne doivent pas nécessairement être des constantes ;
+                elles peuvent être des expressions arbitraires
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                base = 1024
+                table = [base, base+1, base+2, base+3]</pre>
+              </div>
+              <img src="image/knitting.svg" class="html-css-logo" style="left: 50%; top: 55%; height:40%; width:40%">
+            </div>
+          </div>
+
+          <!--slide 38-->
+          <div class="slide">
+            <div class="heading">
+              Lecture et écriture des éléments d'une liste
+            </div>
+            <div class="content">
+              <p>Vous accédez à un élément d'une liste en utilisant l'opérateur <b>[ ]</b>. 
+                Une référence au liste doit apparaître à gauche des crochets. 
+                Une expression arbitraire dont la valeur est un nombre <b>entier non négatif</b> doit se trouver à l'intérieur des parenthèses.
+                Vous pouvez utiliser cette syntaxe pour lire et écrire la valeur d'un élément d'une liste. 
+                Ainsi, les instructions suivantes sont toutes <b>légales</b> en Python :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  a = [<span style="color: #a31515">&quot;monde&quot;</span>,<span style="color: #a31515">&quot;bonjour&quot;</span>,<span style="color: #a31515">&quot;mec&quot;</span>]  <span style="color: #008000"># Commencez par créer une liste</span>
+                  value = a[0]  <span style="color: #008000"># Lecture de l&#39;élément index 0</span>
+                  <span style="color: #0000ff">print</span>(value)
+
+                  i = 1
+                  <span style="color: #0000ff">print</span>(a[i]) <span style="color: #008000">#bonjour</span>
+
+                  <span style="color: #0000ff">print</span>(a[i + 1]) <span style="color: #008000">#mec</span>
+                  a[2] = <span style="color: #a31515">&quot;changement&quot;</span>
+                  <span style="color: #0000ff">print</span>(a[2]) <span style="color: #008000">#changement</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 39-->
+          <div class="slide">
+            <div class="heading">
+              Liste
+            </div>
+            <div class="content">
+              <p>
+                Exercice : enregistrez 5 variables prédéfinies dans un liste et donnez le contenu du liste. 
+                Pour imprimer le contenu du liste, utilisez <b>print()</b> et concaténer les éléments du liste avec le symbole <b>+</b>.
+              </p>
+              <iframe
+                frameborder="0"
+                height="85%"  
+                src="https://onecompiler.com/embed/python/3yetj7w4e"
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 40-->
+          <div class="slide">
+            <div class="heading">
+              Liste Length
+            </div>
+            <div class="content">
+              <p>
+                Chaque liste possède une propriété de longueur (<b>len()</b>). La propriété length spécifie le nombre d'éléments du liste. 
+                Sa valeur est supérieure d'une unité à l'indice le plus élevé du liste
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  a = [] <span style="color: #008000"># =&gt; 0 : la liste n&#39;a pas d&#39;éléments</span>
+                  b = [<span style="color: #a31515">&#39;a&#39;</span>, <span style="color: #a31515">&#39;b&#39;</span>, <span style="color: #a31515">&#39;c&#39;</span>] <span style="color: #008000"># =&gt; 3 : l&#39;indice le plus élevé est 2, la longueur est 3</span>
+                  <span style="color: #0000ff">print</span>(len(a)) <span style="color: #008000">#0</span>
+                  <span style="color: #0000ff">print</span>(len(b)) <span style="color: #008000">#3</span></pre>
+              </div>
+              <img src="image/ruler.svg" class="html-css-logo" style="left: 3%; top: 55%; height:40%; width:105%">
+            </div>
+          </div>
+
+          <!--slide 41-->
+          <div class="slide">
+            <div class="heading">
+              List Manipulation
+            </div>
+            <div class="content">
+              <p>
+                Il existe de nombreuses fonctions de liste directement disponibles sur un type de liste. 
+                <b>Je ne vais pas les détailler</b> car nous n'avons pas encore abordé les fonctions/methods et cela pourrait prêter à confusion. 
+                Cependant, je veux donner un aperçu <b>rapide</b> de ce qui est possible avec les liste.
+              </p>
+              <iframe id="arrayVisualizer" src="arrayVisualizer.html" width="90%" height="250px" style="position:absolute; top:40%;" frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 42-->
+          <div class="slide">
+            <div class="heading">
+              Tuples
+            </div>
+            <div class="content">
+                <div style="width: 100%;"> 
+                  <p>L'objet tuple est à peu près comme une liste qui ne peut pas être modifiée. 
+                    Les tuples sont des séquences, comme les listes, mais ils sont immuables 
+                  </p>
+                </div>
+                <img src="image/immutable.svg" class="html-css-logo" style="left: 10%; top: 30%; height:70%; width:80%">
+            </div>
+          </div>
+
+          <!--slide 43-->
+          <div class="slide">
+            <div class="heading">
+              Immutable vs Mutable
+            </div>
+            <div class="content">
+                <div style="width: 100%;"> 
+                  <p>Il arrive que nous devions fournir des données à une bibliothèque tierce ou qu'un pirate 
+                    s'injecte dans un code de bas niveau. Dans ces cas, nous pouvons protéger notre structure 
+                    de données en la rendant immuable. Créer des données que nous n'avons pas besoin de modifier 
+                    après leur création est généralement considéré comme une bonne pratique.
+                  </p>
+                </div>
+                <img src="image/thief.svg" class="html-css-logo" style="left: 30%; top: 43%; height:55%; width:40%">
+            </div>
+          </div>
+
+          <!--slide 44-->
+          <div class="slide">
+            <div class="heading">
+              Tuple
+            </div>
+            <div class="content">
+              <iframe
+                frameborder="0"
+                height="100%"  
+                src="https://onecompiler.com/embed/python/3yeu2dnj4"
+                width="100%"
+                >
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 45-->
+          <div class="slide">
+            <div class="heading">
+              Set
+            </div>
+            <div class="content">
+                <div style="width: 100%;"> 
+                  <p>Les Sets sont utilisés pour stocker plusieurs éléments dans une seule variable. 
+                    Un set est une collection qui est non ordonnée, non modifiable et non indexée. 
+                    Les ensembles ne peuvent pas avoir deux éléments ayant la même valeur
+                  </p>
+                </div>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    thisset = {<span style="color: #a31515">&quot;apple&quot;</span>, <span style="color: #a31515">&quot;banana&quot;</span>, <span style="color: #a31515">&quot;cherry&quot;</span>, <span style="color: #a31515">&quot;apple&quot;</span>}
+                    <span style="color: #0000ff">print</span>(thisset) <span style="color: #008000">#{&#39;cherry&#39;, &#39;banana&#39;, &#39;apple&#39;}</span></pre>
+                </div>
+                <p>
+                  Les Sets ont de nombreuses applications, notamment dans le cadre de travaux axés sur les chiffres et les bases de données. 
+                  Nous n'entrerons pas dans les détails concernant les Sets. 
+                  Sachez simplement qu'ils existent et qu'ils peuvent être pratiques dans certaines situations
+                </p>
+            </div>
+          </div>
+
+          <!--slide 46-->
+          <div class="slide">
+            <div class="heading">
+              Dictionary
+            </div>
+            <div class="content">
+                <div style="width: 100%;"> 
+                  <p>Les dictionnaires sont utilisés pour stocker des valeurs de données dans des paires clé:valeur.
+                    Un dictionnaire est une collection qui est ordonnée, modifiable et qui ne permet pas les doublons.
+                  </p>
+                  <p>
+                    Les dictionnaires sont écrits avec des crochets, et ont des clés et des valeurs
+                  </p>
+                </div>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    thisdict =	{
+                      <span style="color: #a31515">&quot;brand&quot;</span>: <span style="color: #a31515">&quot;Ford&quot;</span>,
+                      <span style="color: #a31515">&quot;model&quot;</span>: <span style="color: #a31515">&quot;Mustang&quot;</span>,
+                      <span style="color: #a31515">&quot;year&quot;</span>: 2001
+                      <span style="color: #a31515">&quot;year&quot;</span>: 1964
+                    }
+                    <span style="color: #0000ff">print</span>(thisdict) <span style="color: #008000">#{&#39;brand&#39;: &#39;Ford&#39;, &#39;model&#39;: &#39;Mustang&#39;, &#39;year&#39;: 2001}</span></pre>
+                </div>
+                <img src="image/ford.svg" class="html-css-logo" style="left: 60%; top:56%">
+                <img src="image/Ford_Mustang.svg" class="html-css-logo" style="left: 50%; top:75%; width:40%;">
+            </div>
+          </div>
+
+          <!--slide 47-->
+          <div class="slide">
+            <div class="heading">
+              Dictionary
+            </div>
+            <div class="content">
+                <p>En fonctionnement normal, vous créez des dictionnaires avec des littéraux et vous stockez et accédez aux éléments par clé avec indexation
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    d = {<span style="color: #a31515">&#39;spam&#39;</span>: 2, <span style="color: #a31515">&#39;ham&#39;</span>: 1, <span style="color: #a31515">&#39;eggs&#39;</span>: 3} <span style="color: #008000"># Make a dictionary</span>
+                    spam = d[<span style="color: #a31515">&#39;spam&#39;</span>] <span style="color: #008000"># Fetch a value by key</span>
+                    <span style="color: #0000ff">print</span>(spam)
+                    <span style="color: #0000ff">print</span>(d)</pre>
+                </div>
+                <p>Ici, le dictionnaire est affecté à la variable D ; la valeur de la clé 'spam' est l'entier 2, et ainsi de suite.
+                   Pour indexer les dictionnaires par clé, nous utilisons la même syntaxe de crochets que pour indexer les listes par décalage,
+                   mais ici cela signifie un accès par clé et non par position.
+                </p>
+                <p>
+                  La fonction intégrée <b>len</b> fonctionne également sur les dictionnaires;
+                  elle renvoie le nombre d'éléments stockés dans le dictionnaire ou, 
+                  de manière équivalente, la longueur de sa liste de clés.
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    d = {<span style="color: #a31515">&#39;spam&#39;</span>: 2, <span style="color: #a31515">&#39;ham&#39;</span>: 1, <span style="color: #a31515">&#39;eggs&#39;</span>: 3} <span style="color: #008000"># Make a dictionary</span>
+                    <span style="color: #0000ff">print</span>(len(d))</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 48-->
+          <div class="slide">
+            <div class="heading">
+              Dictionary
+            </div>
+            <div class="content">
+              <p>
+                <b>Exercice</b> : Créez un Dictionary de vous-même. 
+                Quels sont les attributs qu'il pourrait être intéressant de connaître à votre sujet ? 
+                Exemple : <b>prénom, nom de famille, sexe</b>
+              </p>
+              <iframe
+              frameborder="0"
+              height="85%"  
+              src="https://onecompiler.com/embed/python/3yf489f7p"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 49-->
+          <div class="slide">
+            <div class="heading">
+              Dictionary
+            </div>
+            <div class="content">
+                <p>Les dictionnaires sont modifiables, ce qui signifie que nous pouvons modifier, 
+                  ajouter ou supprimer des éléments après la création du dictionnaire.
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    person = {
+                      <span style="color: #a31515">&quot;firstName&quot;</span> : <span style="color: #a31515">&quot;Kilian&quot;</span>,
+                      <span style="color: #a31515">&quot;lastName&quot;</span> : <span style="color: #a31515">&quot;Schropp&quot;</span>,
+                      <span style="color: #a31515">&quot;gender&quot;</span> : <span style="color: #a31515">&quot;male&quot;</span>,
+                      <span style="color: #a31515">&quot;age&quot;</span> : 27,
+                      <span style="color: #a31515">&quot;jobExperienceInYears&quot;</span> : 7,
+                    }
+                    <span style="color: #0000ff">print</span>(person[<span style="color: #a31515">&quot;age&quot;</span>]) <span style="color: #008000">#27</span>
+                    person[<span style="color: #a31515">&quot;age&quot;</span>] = 28
+                    <span style="color: #0000ff">print</span>(person[<span style="color: #a31515">&quot;age&quot;</span>]) <span style="color: #008000">#28</span></pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 50-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison 
+            </div>
+            <div class="content">
+                <p>
+                  Les opérateurs de comparaison sont utilisés pour comparer deux valeurs et renvoyer un résultat booléen, 
+                  que nous testerons et sur lequel nous agirons dans une déclaration et un programme plus larges
+                </p>
+                <div class="flex-container">
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                          <th class="tg-0lax"><span style="font-weight:bold">Nom</span></th>
+                          <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0lax">==</td>
+                          <td class="tg-0lax">Egale</td>
+                          <td class="tg-0lax">x == y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">!=</td>
+                          <td class="tg-0lax">Non égal</td>
+                          <td class="tg-0lax"> x != y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&gt;</td>
+                          <td class="tg-0lax">Supérieur à</td>
+                          <td class="tg-0lax">x &gt; y<br></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&lt;</td>
+                          <td class="tg-0lax">Inférieur à</td>
+                          <td class="tg-0lax">x &lt; y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&gt;=</td>
+                          <td class="tg-0lax">Supérieur ou égal à</td>
+                          <td class="tg-0lax">x &gt;= y</td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">&lt;=</td>
+                          <td class="tg-0lax">Inférieur ou égal à</td>
+                          <td class="tg-0lax">x &lt;= y</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div>
+                    <img src="image/scale.svg" style="width:70%;">
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 51-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax"><span style="font-weight:bold">Operator exemple</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Illustration</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Résultat</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">1 &lt; 2</td>
+                        <td class="tg-0lax"><img src="image/scale1-2.svg" style="width:47%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">2.0 &gt;= 1</td>
+                        <td class="tg-0lax"><img src="image/scale20-1.svg" style="width:47%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-0lax"><span style="font-weight:bold">Operator exemple</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Illustration</span></th>
+                        <th class="tg-0lax"><span style="font-weight:bold">Résultat</span></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-0lax">2.0 == 2.0 </td>
+                        <td class="tg-0lax"><img src="image/scale20-20.svg" style="width:60%;"></td>
+                        <td class="tg-0lax"><span style="color:rgb(2, 85, 27)"><b>True</b></span></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-0lax">2.0 != 2.0</td>
+                        <td class="tg-0lax"><img src="image/scale20-20.svg" style="width:60%;"></td>
+                        <td class="tg-0lax"><span style="color:red"><b>False</b></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 52-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison - Enchaîné
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p>Python nous permet également d'enchaîner plusieurs comparaisons pour effectuer des tests de gamme</p>
+                  <p>L'expression <b>(A &lt; B &lt; C)</b>, par exemple, teste si B est entre A et C</p>
+
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      A = <span style="color: #0000FF">2</span>
+                      B = <span style="color: #0000FF">4</span>
+                      C = <span style="color: #0000FF">6</span>
+
+                      <span style="color: #000080; font-weight: bold">print</span>(A&lt;B&lt;C) <span style="color: #008800; font-style: italic">#True</span>
+                      <span style="color: #000080; font-weight: bold">print</span>(B&lt;A&lt;C) <span style="color: #008800; font-style: italic">#False</span>
+                      <span style="color: #000080; font-weight: bold">print</span>(C&lt;B&lt;A) <span style="color: #008800; font-style: italic">#False</span>
+                      <span style="color: #000080; font-weight: bold">print</span>(C&gt;B&gt;A) <span style="color: #008800; font-style: italic">#True</span></pre>
+                  </div>
+                </div>
+                <div>
+                  <img src="image/range.svg" style="width:95%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 53-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs de comparaison - Quiz
+            </div>
+            <div class="content">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScP5xI3CL5xsW1NHLSrBd3M7fC7aBi0DheBGSPr0BVBTRDisw/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+          <!--slide 54-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques
+            </div>
+            <div class="content">
+              <p>Il existe trois opérateurs d'expression booléenne en Python (Opérateurs logiques)</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Description</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Exemple</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">and</td>
+                    <td class="tg-0lax">Retourne Vrai si les deux déclarations sont vraies</td>
+                    <td class="tg-0lax">x &lt; 5 and  x &lt; 10</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">or</td>
+                    <td class="tg-0lax">Renvoie Vrai si l'une des déclarations est vraie.</td>
+                    <td class="tg-0lax">x &lt; 5 or x &lt; 4</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">not</td>
+                    <td class="tg-0lax">Inverse le résultat, renvoie Faux si le résultat est vrai.</td>
+                    <td class="tg-0lax">not(x &lt; 5 and x &lt; 10)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="image/andornot.svg" style="width:58%; margin-top:1%">
+            </div>
+          </div>
+
+          <!--slide 55-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - and
+            </div>
+            <div class="content">
+              <p>Elle donne <b>True</b> si les <b>deux conditions</b> sont <b>True</b>. Et elle donne <b>False</b> si <b>l'une ou l'autre</b> des conditions a ou b est <b>False</b>.</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">b</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">a and b</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">print</span>(True <span style="font-weight: bold">and</span> True) <span style="color: #008800; font-style: italic">#True</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(True <span style="font-weight: bold">and</span> False) <span style="color: #008800; font-style: italic">#False</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(False <span style="font-weight: bold">and</span> False) <span style="color: #008800; font-style: italic">#False</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(False <span style="font-weight: bold">and</span> True) <span style="color: #008800; font-style: italic">#False</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 56-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - or
+            </div>
+            <div class="content">
+              <p>Comme l'opérateur <b>and</b>, l'opérateur <b>or</b> vérifie plusieurs conditions. Mais il renvoie <b>True</b> lorsque <b>l'une ou l'autre ou les deux conditions</b> individuelles sont vraies (True) :</p>
+              <table class="tg" style="width:100%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">b</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">a or b</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">print</span>(True <span style="font-weight: bold">or</span> True) <span style="color: #008800; font-style: italic">#True</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(True <span style="font-weight: bold">or</span> False) <span style="color: #008800; font-style: italic">#True</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(False <span style="font-weight: bold">or</span> False) <span style="color: #008800; font-style: italic">#False</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(False <span style="font-weight: bold">or</span> True) <span style="color: #008800; font-style: italic">#True</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 57-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - not
+            </div>
+            <div class="content">
+              <p>L'opérateur <b>not</b> s'applique à une seule condition. Et il inverse le résultat de cette condition, <b>True</b> devient <b>False</b> et <b>False</b> devient <b>True</b>.</p>
+              <table class="tg" style="width:30%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">a</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">not a</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" style="color:#800400">False</td>
+                    <td class="tg-0lax" style="color:#008000">True</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em; width:30%">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">print</span>(<span style="font-weight: bold">not</span> True) <span style="color: #008800; font-style: italic">#False</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(<span style="font-weight: bold">not</span> False) <span style="color: #008800; font-style: italic">#True</span></pre>
+              </div>
+              <img src="image/uno-reverse.svg" class="html-css-logo" style="left: 40%;top: 30%;height: 66%; width:unset">
+            </div>
+          </div>
+
+          <!--slide 58-->
+          <div class="slide">
+            <div class="heading">
+              Prédominance des opérateurs logiques
+            </div>
+            <div class="content">
+              <p>Lorsque vous mélangez les opérateurs logiques dans une expression, 
+                Python les évalue dans l'ordre qui est appelé la précédence des opérateurs.</p>
+
+              <p>L'exemple suivant montre la préséance des opérateurs <b>not</b>, <b>and</b>, et <b>or</b> :</p>
+              <table class="tg" style="width:30%; height:50%">
+                <thead>
+                  <tr>
+                    <th class="tg-0lax"><span style="font-weight:bold">Operator</span></th>
+                    <th class="tg-0lax"><span style="font-weight:bold">Prédominance</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">not</td>
+                    <td class="tg-0lax">Haut</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">and</td>
+                    <td class="tg-0lax">Moyen</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">or</td>
+                    <td class="tg-0lax">Faible</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="image/dominance.svg" class="html-css-logo" style="left: 36%;top: 45%;height: 50%; width:unset">
+            </div>
+          </div>
+
+          <!--slide 59-->
+          <div class="slide">
+            <div class="heading">
+              Prédominance des opérateurs logiques
+            </div>
+            <div class="content">
+              <table class="tg" style="height:50%">
+                <tbody>
+                  <tr>
+                    <td class="tg-0lax">a or b and c</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">a or (b and c)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a and b or c and d</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">(a and b) or (c and d)</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">a and b and c or d</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">((a and b) and c) or d</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax">not a and b or c</td>
+                    <td class="tg-0lax">signifie</td>
+                    <td class="tg-0lax">((not a) and b) or c</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  a = True
+                  b = False
+                  c = True
+
+                  <span style="color: #000080; font-weight: bold">print</span>(a <span style="font-weight: bold">or</span> b <span style="font-weight: bold">and</span> c) <span style="color: #008800; font-style: italic">#True</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(a <span style="font-weight: bold">or</span> (b <span style="font-weight: bold">and</span> c)) <span style="color: #008800; font-style: italic">#True (même instruction que ci-dessus)</span>
+
+                  <span style="color: #000080; font-weight: bold">print</span>(<span style="font-weight: bold">not</span> a <span style="font-weight: bold">and</span> b <span style="font-weight: bold">or</span> c) <span style="color: #008800; font-style: italic">#True</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(((<span style="font-weight: bold">not</span> a) <span style="font-weight: bold">and</span> b) <span style="font-weight: bold">or</span> c) <span style="color: #008800; font-style: italic">#True (même instruction que ci-dessus)</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 60-->
+          <div class="slide">
+            <div class="heading">
+              Opérateurs logiques - Quiz 
+            </div>
+            <div class="content">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvwGnWIHeCGCnEGQ_dnDhzX9VMLtFLS0Fv82r0gjf1BDKVsQ/viewform?embedded=true" width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+            </div>
+          </div>
+
+          <!--slide 61-->
+          <div class="slide">
+            <div class="heading">
+              Déclarations de flux
+            </div>
+            <div class="content">
+                <p>Chaque instruction en Python a son propre objectif et sa propre syntaxe. 
+                  Il existe bien d'autres instructions en python, mais pour l'instant nous
+                    nous contentons d'examiner les instructions qui contrôlent le flux d'un programme.
+                </p>
+                <div class="flex-container">
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0pky"><span style="font-weight:bold">Statement</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Role</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Exemple</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0pky">if/elif/else</td>
+                          <td class="tg-0pky">Sélection des actions</td>
+                          <td class="tg-0pky"><pre>if "python" in text:<br>    print(text)</pre></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">for/else</td>
+                          <td class="tg-0pky">Iteration</td>
+                          <td class="tg-0pky"><pre>for x in mylist:<br>    print(x)</pre></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0pky">while/else</td>
+                          <td class="tg-0pky">Boucles générales</td>
+                          <td class="tg-0pky"><pre>while X &gt; Y:<br>    print('hello')</pre></td>
+                        </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                  <div>
+                    <table class="tg">
+                      <thead>
+                        <tr>
+                          <th class="tg-0pky"><span style="font-weight:bold">Statement</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Role</span></th>
+                          <th class="tg-0pky"><span style="font-weight:bold">Exemple</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="tg-0pky">pass</td>
+                          <td class="tg-0pky">Emplacement vide</td>
+                          <td class="tg-0pky"><pre>while True:<br>    pass</pre></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">break</td>
+                          <td class="tg-0lax">Sortie de boucle</td>
+                          <td class="tg-0lax"><pre>while True:<br>    if exittest(): break</pre></td>
+                        </tr>
+                        <tr>
+                          <td class="tg-0lax">continue</td>
+                          <td class="tg-0lax">Continuer la boucle</td>
+                          <td class="tg-0lax"><pre>while True:<br>    if skiptest(): continue</pre></td>
+                        </tr>
+                      </tbody>
+                      </table>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 62-->
+          <div class="slide">
+            <div class="heading">
+              Bloc syntax - Double point/Indentation 
+            </div>
+            <div class="content">
+                <p>Avant d'entrer dans les détails de l'une ou l'autre des déclarations concrètes,
+                    je veux commencer à étudier la syntaxe des instructions Python
+                </p>
+                <p>
+                  Toutes les instructions composées Python (instructions dans lesquelles d'autres instructions sont imbriquées)
+                  suivent le même schéma général : une ligne d'en-tête terminée par <b>double point</b>, suivie d'un bloc de code <b>imbriqué</b>,
+                  généralement indenté sous la ligne d'en-tête, comme ceci :
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                  Ligne d'en-tête:
+                          Bloc d'instructions imbriquées</pre>
+                </div>
+                <br>
+                <p>
+                  Le double point est <b>obligatoire</b>, et l'omettre est probablement l'erreur de codage la plus courante pour les nouveaux programmeurs Python
+                </p>
+            </div>
+          </div>
+
+          <!--slide 63-->
+          <div class="slide">
+            <div class="heading">
+              Bloc syntax - Indentation  
+            </div>
+            <div class="content">
+                <p><b>La fin de l'indentation est la fin du bloc</b>
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">if</span> x <span style="color: #333333">&gt;</span> y:
+                        x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>
+                        y <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2</span></pre>
+                </div>
+                <br>
+                <p><b>Pourquoi la syntaxe de l'indentation ?</b></p>
+                <p>c'est l'une des principales façons dont Python oblige (presque) les programmeurs à produire un code uniforme, régulier et lisible.</p>
+                <p><b>Règle de l'énoncé des cas particuliers</b></p>
+                <p>Bien que les déclarations apparaissent normalement une par ligne, il est possible de faire tenir plus d'une déclaration sur une seule ligne en Python, en les séparant par des points-virgules.</p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    a <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">1</span>; b <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">2</span>; <span style="color: #008800; font-weight: bold">print</span>(a <span style="color: #333333">+</span> b)</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 64-->
+          <div class="slide">
+            <div class="heading">
+              if Tests 
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div style="width:40%">
+                  <p>Ce chapitre présente l'instruction <b>if</b> de Python, qui est la principale instruction utilisée 
+                    pour sélectionner des actions alternatives en fonction des résultats des tests.
+                  </p>
+                </div>
+                <div style="width:60%;">
+                  <img src="image/ifelse.svg" style="width:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 65-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Format général 
+            </div>
+            <div class="content">
+                <p>
+                  Lorsque l'instruction if s'exécute, Python exécute le bloc de code associé au premier test dont l'évaluation est vraie, 
+                  ou le bloc else si tous les tests sont faux. La forme générale d'une instruction if ressemble à ceci
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">if</span> test1: <span style="color: #10863d"># if test</span>
+                        statements1 <span style="color: #10863d"># bloc associé</span>
+                    <span style="color: #008800; font-weight: bold">elif</span> test2: <span style="color: #10863d"># Optionnel elifs</span>
+                        statements2
+                    <span style="color: #008800; font-weight: bold">else</span>: <span style="color: #10863d"># Optionnel else</span>
+                        statements3</pre>
+                </div>
+                <br>
+                <p>
+                  <b>Exemple de base</b>
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">if</span> <span style="color: #0000DD; font-weight: bold">1</span>:
+                        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&#39;true&#39;</span>)</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 66-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Format général 
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/python/3yfskqnfn"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 67-->
+          <div class="slide">
+            <div class="heading">
+              if/else Ternary Expression
+            </div>
+            <div class="content">
+              <p>Parfois, les éléments d'une déclaration sont si simples qu'il semble exagéré de les répartir sur plusieurs lignes.</p>
+              <p>Python nous offre un format d'expression qui nous permet de faire des if/else dans une seule expression. </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">A <span style="color: #333333">=</span> Y <span style="color: #008800; font-weight: bold">if</span> X <span style="color: #008800; font-weight: bold">else</span> Z</pre></div>
+              <p>Navigation exemple</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                direction = <span style="color: #0000FF">&quot;Toulouse&quot;</span>
+                result = <span style="color: #0000FF">&quot;aller à gauche&quot;</span> <span style="color: #000080; font-weight: bold">if</span> direction == <span style="color: #0000FF">&quot;Toulouse&quot;</span> <span style="color: #000080; font-weight: bold">else</span> <span style="color: #0000FF">&quot;aller à droite&quot;</span>
+                <span style="color: #000080; font-weight: bold">print</span>(result) <span style="color: #008800; font-style: italic">#aller à gauche</span></pre>
+              </div>
+            </div>
+          </div>
+                   
+          <!--slide 68-->
+          <div class="slide">
+            <div class="heading">
+              while et for Loops
+            </div>
+            <div class="content">
+              <p>Je vais présenter les les deux principales constructions de boucles du langage - des énoncés qui répètent une action encore et encore</p>
+              <iframe id="loop" src="image/loop.svg" width="45.5%" height="90%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 69-->
+          <div class="slide">
+            <div class="heading">
+              while Loops
+            </div>
+            <div class="content">
+              <p>L'instruction while de Python est la construction d'itération la plus générale du langage. En termes simples, 
+                elle exécute de manière répétée un bloc d'instructions (normalement indentées) tant qu'un test situé 
+                en haut de l'instruction continue d'être évalué à une valeur vraie. On l'appelle une "boucle" parce 
+                que le contrôle revient au début de l'instruction jusqu'à ce que le test devienne faux.
+              </p>
+              <div class="flex-container">
+                <div style="width:20%">
+                  <p><b>Format général</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">while</span> test : <span style="color: #008800; font-style: italic"># Test en boucle</span>
+                          statements <span style="color: #008800; font-style: italic"># Corps de la boucle</span>
+                      <span style="color: #000080; font-weight: bold">else</span> : <span style="color: #008800; font-style: italic"># Optionnel else</span>
+                          déclarations <span style="color: #008800; font-style: italic"># Exécution si la boucle n&#39;a pas été interrompue par break</span></pre>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex-container">
+                <div style="width:20%">
+                  <p><b>Exemple</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">while</span> True :
+                          <span style="color: #000080; font-weight: bold">print</span>(<span style="color: #0000FF">&#39;Here we are now&#39;</span>)</pre>
+                  </div>
+                </div>
+              </div>
+              <img src="image/kurtcobain.svg" class="html-css-logo" style="width:40%; left: 50%; top:62%; height:unset">
+            </div>
+          </div>
+          
+          <!--slide 70-->
+          <div class="slide">
+            <div class="heading">
+              while Loops
+            </div>
+            <div class="content">
+              <p>Le code suivant compte à partir de la valeur de a jusqu'à, mais sans inclure, b. 
+                Nous verrons plus tard une façon plus simple de le faire avec une boucle for Python et la fonction intégrée range.
+              </p>
+              <iframe
+              frameborder="0"
+              height="100%"  
+              src="https://onecompiler.com/embed/python/3yfvq5qgr"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 71-->
+          <div class="slide">
+            <div class="heading">
+              break, continue, pass, et le Loop else
+            </div>
+            <div class="content">
+              <p><b>break: </b>Saute hors de la boucle la plus proche (au-delà de l'énoncé de la boucle).</p>
+
+              <p><b>continue: </b>Saut au sommet de la boucle la plus proche (à la ligne d'en-tête de la boucle).</p>
+
+              <p><b>pass: </b>Ne fait rien du tout : il s'agit d'un espace vide pour une déclaration.</p>
+
+              <p><b>Loop else block: </b>S'exécute si et seulement si la boucle est quittée normalement (c'est-à-dire sans coupure).</p>
+
+              <p>En tenant compte des instructions break et continue, le format général de la boucle while se présente comme suit ressemble à ceci :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">while</span> test :
+                      declarations
+                      <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">break</span> <span style="color: #008800; font-style: italic"># Quitter la boucle maintenant, ignorer else si présent</span>
+                      <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">continue</span> <span style="color: #008800; font-style: italic"># Aller au début de la boucle maintenant, à test1</span>
+                  <span style="color: #000080; font-weight: bold">else</span> :
+                      statements <span style="color: #008800; font-style: italic"># Exécuter si nous n&#39;avons pas trouvé de &#39;break&#39;.</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 72-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - pass
+            </div>
+            <div class="content">
+              <p>Tout d'abord, la déclaration <b>pass</b> est un substitut <b>non opérationnel</b> qui est utilisé lorsque la syntaxe exige une déclaration,
+                 mais que vous <b>n'avez rien d'utile à dire</b>. Elle est souvent utilisée pour coder un corps vide pour une instruction composée.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">while</span> True: 
+                      <span style="color: #000080; font-weight: bold">pass</span></pre>
+              </div>
+              <p>Cet exemple ne fait rien pour toujours. Ce n'est probablement pas le programme Python le plus utile jamais écrit 
+                (à moins que vous ne vouliez réchauffer votre ordinateur portable par une froide journée d'hiver !); 
+                franchement, cependant, je ne pouvais pas penser à un meilleur exemple de passe à ce stade de la diapositive.</p>
+
+                <p>Nous ne pouvons pas laisser le corps vide sans obtenir une erreur de syntaxe, donc nous disons pass à la place.</p>
+            </div>
+          </div>
+
+          <!--slide 73-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - continue
+            </div>
+            <div class="content">
+              <p>L'instruction continue provoque un saut immédiat au début d'une boucle. Elle permet aussi parfois d'éviter l'imbrication des instructions</p>
+
+              <p>L'exemple suivant utilise continue pour sauter les nombres impairs. 
+                Ce code imprime tous les nombres pairs inférieurs à 10 et supérieurs ou égaux à 0. Rappelez-vous que 0 signifie 
+                faux et que % est le reste de l'opérateur de division (modulo).
+              </p>
+              <iframe
+              frameborder="0"
+              height="70%"  
+              src="https://onecompiler.com/embed/python/3yfvt9uxn"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 74-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - break
+            </div>
+            <div class="content">
+              <p>L'instruction break provoque une sortie immédiate d'une boucle. Comme le code qui la suit dans la boucle n'est pas exécuté 
+                si l'instruction break est atteinte, vous pouvez aussi parfois éviter l'imbrication en incluant une instruction break. 
+                l'imbrication en incluant un break.</p>
+                <iframe
+                frameborder="0"
+                height="80%"  
+                src="https://onecompiler.com/embed/python/3yfvuuxdr"
+                width="100%"
+                ></iframe>
+            </div>
+          </div>
+
+          <!--slide 75-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - Loop else
+            </div>
+            <div class="content">
+              <p>Comme vous l'avez appris précédemment, la clause <b>else</b> est utilisée avec l'instruction if. 
+                Python permet également d'utiliser le mot-clé <b>else</b> avec les boucles <b>while</b>. Le bloc <b>else</b> apparaît après le corps de la boucle.
+                 Les instructions du bloc <b>else</b> seront exécutées après la fin de toutes les itérations. 
+                 Le programme ne sort de la boucle qu'après l'exécution du bloc <b>else</b>.</p>
+
+                 <iframe
+                 frameborder="0"
+                 height="80%"  
+                 src="https://onecompiler.com/embed/python/3yfvwwxsj"
+                 width="100%"
+                 ></iframe>
+            </div>
+          </div>
+
+          <!--slide 76-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - exercise
+            </div>
+            <div class="content">
+              <p>Comptez de 1 à 100 en utilisant une boucle while et affichez chaque étape sur la console avec print().</p>
+
+                  <iframe
+                  frameborder="0"
+                  height="98%"  
+                  src="https://onecompiler.com/embed/python/3yfvxq6rq"
+                  width="100%"
+                  ></iframe>
+            </div>
+          </div>
+
+          <!--slide 77-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - exercise
+            </div>
+            <div class="content">
+              <p>imprimer tous les éléments d'une liste en utilisant une boucle while</p>
+
+              <iframe
+              frameborder="0"
+              height="98%"  
+              src="https://onecompiler.com/embed/python/3yfvy9me9"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              for Loops
+            </div>
+            <div class="content">
+              <p>La boucle for est un itérateur générique en Python : elle peut parcourir les éléments d'une séquence ordonnée ou d'un autre objet itérable.</p>
+              <br>
+              <p><b>Format général</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">for</span> target <span style="font-weight: bold">in</span> object : <span style="color: #008800; font-style: italic"># Affecter les éléments de l&#39;objet à la cible</span>
+                      statements <span style="color: #008800; font-style: italic"># Corps de la boucle répétée : utilise la cible</span>
+                  <span style="color: #000080; font-weight: bold">else</span> : <span style="color: #008800; font-style: italic"># Partie else facultative</span>
+                      statements <span style="color: #008800; font-style: italic"># Si nous n&#39;avons pas atteint un &#39;break&#39; (pause)</span></pre>
+              </div>
+              <br>
+              <p>Lorsque Python exécute une boucle for, il affecte les éléments de l'objet itérable à la cible un par un et exécute 
+                le corps de la boucle pour chacun. Le corps de la boucle utilise généralement la cible d'affectation pour faire 
+                référence à l'élément actuel de la séquence comme s'il s'agissait d'un curseur qui se déplace dans la séquence.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 78-->
+          <div class="slide">
+            <div class="heading">
+              for Loops - break, continue, pass, et le Loop else
+            </div>
+            <div class="content">
+              <p>L'instruction for prend également en charge un bloc <b>else</b> facultatif, 
+                qui fonctionne exactement comme dans une boucle <b>while</b> - il est exécuté 
+                si la boucle sort sans tomber sur une instruction <b>break</b> (c'est-à-dire si 
+                tous les éléments de la séquence ont été visités). Les instructions <b>break</b> 
+                et continue introduites précédemment fonctionnent également de la même manière 
+                dans une boucle <b>for</b> que dans une boucle <b>while</b>. Le format complet de la boucle <b>for</b> 
+                peut être décrit de la manière suivante</p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #000080; font-weight: bold">for</span> target <span style="font-weight: bold">in</span> object : <span style="color: #008800; font-style: italic"># Affecter les éléments de l&#39;objet à la cible</span>
+                        declarations
+                        <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">break</span> <span style="color: #008800; font-style: italic"># Quitter la boucle maintenant, passer à autre chose</span>
+                        <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">continue</span> <span style="color: #008800; font-style: italic"># Aller au début de la boucle maintenant</span>
+                    <span style="color: #000080; font-weight: bold">else</span> :
+                        statements <span style="color: #008800; font-style: italic"># Si nous n&#39;avons pas trouvé de &#39;break&#39;.</span></pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 77-->
+          <div class="slide">
+            <div class="heading">
+              for Loops - exemple
+            </div>
+            <div class="content">
+              <p>imprimer tous les éléments d'une liste en utilisant une boucle while</p>
+
+              <iframe
+              frameborder="0"
+              height="98%"  
+              src="https://onecompiler.com/embed/python/3yfw6b33g"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 79-->
+          <div class="slide">
+            <div class="heading">
+              Functions
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div style="width:50%;">
+                  <p>En termes simples, une fonction est un outil qui regroupe un ensemble d'instructions de manière à ce qu'elles puissent 
+                    être exécutées plusieurs fois dans un programme - une procédure packagée invoquée par son nom.
+                  </p>
+                  <ul>
+                    <li>Une fonction est un bloc de code qui ne s'exécute que lorsqu'il est appelé.</li>
+                    <li>Vous pouvez transmettre des données, appelées paramètres, à une fonction.</li>
+                    <li>Une fonction peut renvoyer des données comme résultat.</li>
+                  </ul>
+                </div>
+                <div>
+                    <img src="image/function.svg" style="width:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 80-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Pourquoi utiliser des fonctions ?
+            </div>
+            <div class="content">
+              <p>Avant d'entrer dans les détails, il faut établir une image claire de ce que sont les fonctions</p>
+              <ul>
+                <li><b>Maximiser la réutilisation du code et minimiser la redondance</b></li>
+                <p>Les fonctions Python constituent le moyen le plus simple de d'emballer la logique que 
+                  vous souhaitez utiliser à plusieurs endroits et à plusieurs reprises
+                </p>
+                <li><b>Procedural decomposition</b></li>
+                <p>Les fonctions constituent également un outil permettant de diviser les systèmes en parties 
+                  ayant des rôles bien définis. Par exemple, pour faire une <b>pizza</b> à partir de rien, 
+                  il faut commencer par mélanger la pâte, l'étaler, ajouter les garnitures, la faire cuire, 
+                  etc. Si vous deviez programmer un robot pizzaïolo, les fonctions vous aideraient à diviser 
+                  la tâche globale de "fabrication d'une <b>pizza</b>" en plusieurs parties, une fonction pour 
+                  chaque sous-tâche du processus. Il est plus facile d'implémenter les petites tâches 
+                  isolément que d'implémenter l'ensemble du processus en une seule fois.</p>
+              </ul>
+              <img src="image/pizza.svg" class="html-css-logo" style="left: 60%; top:76%; width:10%">
+            </div>
+          </div>
+
+          <!--slide 81-->
+          <div class="slide">
+            <div class="heading">
+              Functions - def Statements ?
+            </div>
+            <div class="content">
+              <p>L'instruction def crée un objet fonction et l'affecte à un nom. Son format général est le suivant :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">def</span> name(arg1, arg2,... argN):
+                  statements</pre>
+              </div>
+              <p>def se compose d'une ligne d'en-tête suivie d'un bloc d'instructions, généralement indenté. Le bloc d'instructions devient le corps de la fonction, 
+                c'est-à-dire le code que Python exécute chaque fois que la fonction est appelée par la suite.
+              </p>
+              <br>
+              <p style="width: 40%;">L'instruction Python return peut apparaître n'importe où dans le corps d'une fonction ; 
+                lorsqu'elle est atteinte, elle met fin à l'appel de la fonction et renvoie un résultat à l'appelant
+              </p>  
+              <img src="image/functiondescription.svg" class="html-css-logo" style="left: 45%; top:53%; width:47%; height:47%">
+            </div>
+          </div>
+
+          <!--slide 82-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Simple
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="100%"  
+              src="https://onecompiler.com/embed/python/3yf52gd4a"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 83-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Calls/Appelle
+            </div>
+            <div class="content">
+              <p>L'instruction <b>def</b> crée une fonction mais ne l'appelle pas. 
+                Après l'exécution de l'instruction <b>def</b>, vous pouvez appeler (exécuter) 
+                la fonction dans votre programme en ajoutant des parenthèses après le nom de la fonction
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">def</span> times(x, y): <span style="color: #008000"># Créer et attribuer une fonction</span>
+                    <span style="color: #0000ff">return</span> x * y </pre>
+              </div>
+              <p>Les parenthèses peuvent éventuellement contenir un ou plusieurs arguments 
+                d'objet, qui seront passés (assignés) aux noms de l'en-tête de la fonction
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  times(2, 4) <span style="color: #008000"># Arguments in parentheses</span>
+                  <span style="color: #008000">#La fonction renvoie 8</span></pre>
+              </div>
+              <p>Maintenant, regardez ce qui se passe quand la fonction est appelée une autre fois, avec des objets très différents types:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  times(<span style="color: #a31515">&#39;Ni&#39;</span>, 4) <span style="color: #008000"># Les fonctions sont &quot;sans typologie&quot;.&quot;</span>
+                  <span style="color: #008000">#La fonction renvoie &#39;NiNiNiNi</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 84-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Polymorphism
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="100%"  
+              src="https://onecompiler.com/embed/python/3yf56d86j"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 85-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Scopes
+            </div>
+            <div class="content">
+              <p>Les scopes permettent d'éviter les conflits de noms dans le code de votre programme :
+                les noms définis dans une unité de programme n'interfèrent pas avec les noms d'une autre unité.
+              </p>
+              <br>
+              <div class="flex-container">
+                <div>
+                  <p>Lorsque vous utilisez un nom dans un programme, Python crée, modifie ou recherche le nom dans 
+                    ce que l'on appelle un <b>espace de noms, c'est-à-dire un endroit où vivent les noms</b>.
+                  </p>
+                  <p>L'endroit où vous attribuez un nom dans votre code source détermine l'espace de nom dans lequel il va vivre et donc sa visibilité.</p>
+                </div>
+                <div>
+                  <img src="image/variable-living-space.svg" style="width: 100%">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--slide 86-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Scopes
+            </div>
+            <div class="content">
+              <p>les variables peuvent être assignées à trois endroits différents, correspondant à trois scopes différentes
+              </p>
+              <ul>
+                <li>Si une <b>variable</b> est assignée à l'intérieur d'une <b>def</b>, elle est <b>locale</b> à cette fonction.</li>
+                <li>Si une <b>variable</b> est assignée dans une <b>def</b> englobante, elle est <b>non locale</b> aux fonctions imbriquées.</li>
+                <li>Si une <b>variable</b> est assignée en dehors de toutes les <b>defs</b>, elle est <b>globale</b> à l'ensemble du fichier.</li>
+              </ul>
+              <br>
+              <p>Par exemple, dans le fichier de module suivant, l'affectation X = 99 crée une variable globale nommée X (visible partout dans ce fichier), 
+                mais l'affectation X = 88 crée une variable locale X (visible uniquement dans l'instruction def) :
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  X = <span style="color: #0000FF">99</span> <span style="color: #008800; font-style: italic"># Global (module) scope X</span>
+
+                  <span style="color: #000080; font-weight: bold">def</span> func():
+                      X = <span style="color: #0000FF">88</span> <span style="color: #008800; font-style: italic"># Local (function) scope X: une autre variable</span>
+                      <span style="color: #000080; font-weight: bold">print</span>(X)
+
+                  func() <span style="color: #008800; font-style: italic">#il affiche 88</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(X)  <span style="color: #008800; font-style: italic">#il affiche 99</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 87-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Scopes (LEGB lookup rule)
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p>Python recherche jusqu'à quatre scopes - le <b>local (L) scope</b>, puis les 
+                    <b>Eclosing locals scopes (E)</b>, puis le <b>scope global (G)</b>, et enfin la <b>built-in (B) scope</b> 
+                    - et s'arrête au premier endroit où le nom est trouvé. Si le nom n'est pas trouvé au cours 
+                    de cette recherche, Python signale une erreur.
+                  </p>
+                  <p><b>Ignorons pour l'instant les built-ins</b></p>
+                </div>
+                <div style="width: 50%;">
+                  <img src="image/magnifier.svg" style="width: 100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 88-->
+          <div class="slide">
+            <div class="heading">
+              Functions - La déclaration globale
+            </div>
+            <div class="content">
+              <p>La déclaration <b>global</b> et sa cousine <b>nonlocal</b> sont les seules choses qui ressemblent de 
+                près ou de loin à des déclarations en Python. Ce ne sont pas des déclarations de type ou de taille, cependant ;
+                ce sont des déclarations d'espace de noms. La déclaration <b>global</b> indique à Python qu'une fonction 
+                prévoit de de modifier un ou plusieurs noms globaux, c'est-à-dire des noms qui vivent dans namespace (espace de noms) du module qui l'entoure
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  X = <span style="color: #0000FF">88</span> <span style="color: #008800; font-style: italic"># Global X</span>
+                  <span style="color: #000080; font-weight: bold">print</span>(X) <span style="color: #008800; font-style: italic"># il affiche 88</span>
+
+                  <span style="color: #000080; font-weight: bold">def</span> func():
+                      <span style="color: #000080; font-weight: bold">global</span> X
+                      X = <span style="color: #0000FF">99</span> <span style="color: #008800; font-style: italic"># Global X: en dehors de def</span>
+
+                  func()
+                  <span style="color: #000080; font-weight: bold">print</span>(X) <span style="color: #008800; font-style: italic"># il affiche 99</span></pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 89-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Nested Scope Examples
+            </div>
+            <div class="content">
+              <p>le <b>def</b> est simplement une instruction exécutable, qui peut apparaître partout où une autre instruction peut apparaître
+                , y compris imbriquée dans un autre <b>def</b>. Ici, le <b>def</b> imbriqué s'exécute pendant qu'un appel à la fonction <b>f1</b> s'exécute ;
+                 il génère une fonction et l'assigne au nom <b>f2</b>, une variable locale dans le scope local de <b>f1</b>. En un sens, <b>f2</b> est une 
+                 fonction temporaire qui ne vit que pendant l'exécution de (et n'est visible que par le code de) la fonction <b>f1</b> qui l'entoure
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  X = <span style="color: #0000FF">99</span> <span style="color: #008800; font-style: italic"># Global scope name: pas utilisé</span>
+                  <span style="color: #000080; font-weight: bold">def</span> f1():
+                      X = <span style="color: #0000FF">88</span> <span style="color: #008800; font-style: italic"># Enclosing def local</span>
+                      <span style="color: #000080; font-weight: bold">def</span> f2():
+                          <span style="color: #000080; font-weight: bold">print</span>(X) <span style="color: #008800; font-style: italic"># Reference fait dans nested def</span>
+                          f2()
+                  f1() <span style="color: #008800; font-style: italic"># affiche 88: enclosing def local</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 90-->
+          <div class="slide">
+            <div class="heading">
+              Functions - nonlocal
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div style="width: 65%;">
+                  <p>Le mot-clé <b>nonlocal</b> est utilisé pour travailler avec des variables à l'intérieur de fonctions imbriquées, 
+                    où la variable ne doit pas appartenir à la fonction interne.
+                  </p>
+                  <p>Utilisez le mot clé <b>nonlocal</b> pour déclarer que la variable n'est pas locale.</p>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">def</span> myfunc1():
+                          box = <span style="color: #0000FF">&quot;inception&quot;</span>
+                          <span style="color: #000080; font-weight: bold">def</span> leonardoFunction():
+                              nonlocal box
+                              box = <span style="color: #0000FF">&quot;Leonardo DiCaprio&quot;</span>
+                          leonardoFunction()
+                          <span style="color: #000080; font-weight: bold">return</span> box
+    
+                      <span style="color: #000080; font-weight: bold">print</span>(myfunc1()) <span style="color: #008800; font-style: italic">#affiche Leonardo DiCaprio</span></pre>
+                  </div>
+                </div>
+                <div style="width: 30%;">
+                  <img src="image/inception.svg" style="width: 85%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 91-->
+          <div class="slide">
+            <div class="heading">
+              Quiz - Scopes
+            </div>
+            <div class="content grid center">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSc_pz7O6vNbXemXOtANWdR77u3YWb-OIMlyQaAL5fV93C7TFA/viewform?embedded=true"
+                width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 92-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Arguments
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div>
+                  <p>Les diapositives suivantes poursuivent l'histoire des fonctions en étudiant les concepts du passage d'arguments en Python,
+                     c'est-à-dire la façon dont les objets sont envoyés aux fonctions en tant que données d'entrée. 
+                  </p>
+                  <p>Comme nous le verrons, <b>les arguments</b> (aussi appelés paramètres) sont affectés à des <b>noms dans une fonction</b>, 
+                    mais ils ont plus à voir avec les références d'objets qu'avec les scopes de variables.</p>
+                </div>
+                <div>
+                  <img src="image/arguments.svg" style="width: 90%;">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--slide 93-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div style="width: 60%;">
+                  <p><b>Les arguments sont transmis en assignant automatiquement des objets aux noms de variables locales. </b>
+                  </p>
+                  <p>Les arguments de fonction (références à des objets partagés envoyées par l'appelant) ne sont qu'un autre 
+                    exemple d'affectation Python à l'œuvre. Les objets passés en tant qu'arguments ne sont jamais copiés automatiquement.
+                  </p>
+                  <p>
+                    <b>C'est un peu comme faire : box = box2 = "text"</b>
+                  </p>
+                </div>
+                <div>
+                  <img src="image/argumentPassing.svg" style="width: 85%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 94-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div>
+                  <p><b>L'affectation des noms d'arguments à l'intérieur d'une fonction n'affecte pas l'appelant.</b>
+                  </p>
+                  <p>Les noms des arguments dans l'en-tête de la fonction deviennent de nouveaux noms locaux lorsque la fonction s'exécute, 
+                    dans la portée de la fonction. Il n'y a pas d'alias entre les noms d'arguments de la fonction 
+                    et les noms de variables dans le scope de l'appelant.
+                  </p>
+                  <p>
+                    <b>C'est un peu comme faire :</b>
+                  </p>
+                  <div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      box <span style="color: #666666">=</span> box2 <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;text&quot;</span>
+                      box2 <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;nouveau texte&quot;</span></pre>
+                  </div>
+                </div>
+                <div style="width:52%">
+                  <img src="image/argumentAssignment.svg" style="width: 100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 95-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Argument-Passing Basics
+            </div>
+            <div class="content"> 
+              <div class="flex-container">
+                <div style="width:64%">
+                  <p><b>La modification de l'argument d'un objet mutable dans une fonction peut avoir un impact sur l'appelant.</b>
+                  </p>
+                  <p>D'un autre côté, comme les arguments sont simplement affectés à des objets transmis, 
+                    les fonctions peuvent modifier les objets mutables transmis sur place, et les résultats peuvent affecter l'appelant. 
+                    Les arguments mutables peuvent être des entrées et des sorties pour les fonctions
+                  </p>
+                  <p>
+                    <b>Exemple :</b>
+                  </p>
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      arr <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span>,<span style="color: #0000DD; font-weight: bold">4</span>]
+                      <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">mutate</span>(arr):
+                          arr[<span style="color: #0000DD; font-weight: bold">0</span>] <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">100</span>
+
+                      mutate(arr)
+                      <span style="color: #008800; font-weight: bold">print</span>(arr[<span style="color: #0000DD; font-weight: bold">0</span>]) <span style="color: #888888">#100</span></pre>
+                  </div>
+                </div>
+                <div style="width:52%">
+                  <img src="image/mutable.svg" style="width: 100%;">
+                  <div style="background: #be7d7d; overflow:auto;width:auto;border:solid rgb(129, 23, 23);border-width:.1em .1em .1em .8em;padding:.2em .6em; margin-top:1.3%;">
+                    <pre style="margin: 0; line-height: 125%">
+                      arr <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span>,<span style="color: #0000DD; font-weight: bold">4</span>]
+                      <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">reassign</span>(arr):
+                          arr <span style="color: #333333">=</span> [<span style="color: #0000DD; font-weight: bold">100</span>,<span style="color: #0000DD; font-weight: bold">200</span>,<span style="color: #0000DD; font-weight: bold">300</span>,<span style="color: #0000DD; font-weight: bold">400</span>]
+
+                      reassign(arr)
+                      <span style="color: #008800; font-weight: bold">print</span>(arr[<span style="color: #0000DD; font-weight: bold">0</span>]) <span style="color: #10a171">#1</span></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 96-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Nombre d'arguments
+            </div>
+            <div class="content">
+              <p>Par défaut, une fonction doit être appelée avec le nombre correct d'arguments. 
+                Cela signifie que si votre fonction attend 2 arguments, vous devez appeler la fonction avec 2 arguments, ni plus, ni moins. 
+              </p>
+              <p>Cette fonction attend 2 arguments, et reçoit 2 arguments :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                <span style="color: #0000ff">def</span> my_function(fname, lname):
+                    <span style="color: #0000ff">print</span>(fname + <span style="color: #a31515">&quot; &quot;</span> + lname)
+
+                my_function(<span style="color: #a31515">&quot;Emil&quot;</span>, <span style="color: #a31515">&quot;Refsnes&quot;</span>)</pre>
+              </div>
+              <p>Cette fonction attend 2 arguments, mais n'en reçoit qu'un seul:</p>
+              <div style="background: #fa8f8f; overflow:auto;width:auto;border:solid rgb(134, 0, 0);border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">def</span> my_function(fname, lname):
+                      <span style="color: #0000ff">print</span>(fname + <span style="color: #a31515">&quot; &quot;</span> + lname)
+
+                  my_function(<span style="color: #a31515">&quot;Emil&quot;</span>)</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 97-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Arguments arbitraires, *args
+            </div>
+            <div class="content">
+              <p>Si vous ne savez pas combien d'arguments seront passés dans votre fonction, 
+                ajoutez un * devant le nom du paramètre dans la définition de la fonction. 
+              </p>
+              <p>De cette façon, la fonction recevra un tuple d'arguments et pourra accéder aux éléments en conséquence:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">my_function</span>(<span style="color: #333333">*</span>kids):
+                      <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Le plus jeune enfant est &quot;</span> <span style="color: #333333">+</span> kids[<span style="color: #0000DD; font-weight: bold">2</span>])
+
+                  my_function(<span style="background-color: #fff0f0">&quot;Emil&quot;</span>, <span style="background-color: #fff0f0">&quot;Tobias&quot;</span>, <span style="background-color: #fff0f0">&quot;Linus&quot;</span>)</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 98-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Arguments de mots-clés
+            </div>
+            <div class="content">
+              <p>Vous pouvez également envoyer des arguments avec la syntaxe clé = valeur
+              </p>
+              <p>De cette façon, l'ordre des arguments n'a pas d'importance:</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">my_function</span>(child3, child2, child1):
+                  <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Le plus jeune enfant est &quot;</span> <span style="color: #333333">+</span> child3)
+
+                  my_function(child1 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Emil&quot;</span>, child2 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Tobias&quot;</span>, child3 <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Linus&quot;</span>)</pre>
+              </div>
+              <p>Si vous ne savez pas combien d'arguments seront passés dans votre fonction, ajoutez deux astérisques : <b>**</b> 
+                devant le nom du paramètre dans la définition de la fonction.
+              </p>
+              <p>De cette façon, la fonction recevra un dictionnaire d'arguments, et pourra accéder aux éléments en conséquence: </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">my_function</span>(<span style="color: #333333">**</span>kid):
+                      <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&quot;Le plus jeune enfant est &quot;</span> <span style="color: #333333">+</span> kid[<span style="background-color: #fff0f0">&quot;lname&quot;</span>])
+
+                  my_function(fname <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Tobias&quot;</span>, lname <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Refsnes&quot;</span>)</pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 99-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Arguments arbitraires, **
+            </div>
+            <div class="content">
+              <p>
+                Appelez la méthode avec votre prénom et votre nom de famille comme valeurs.
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/python/3yfac932g"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 100-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Paramètre Valeur par défaut
+            </div>
+            <div class="content">
+              <p>L'exemple suivant montre comment utiliser une valeur de paramètre par défaut. 
+                Si nous appelons la fonction sans argument, elle utilise la valeur par défaut
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">def</span> my_function(country = <span style="color: #a31515">&quot;France&quot;</span>):
+                      <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;mon pays de naissance est &quot;</span> + country)
+
+                  my_function(<span style="color: #a31515">&quot;Germany&quot;</span>)
+                  my_function(<span style="color: #a31515">&quot;Czech&quot;</span>)
+                  my_function() </pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 101-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Indications de type
+            </div>
+            <div class="content">
+              <p>En Python, votre code n'est pas censé se soucier de types de données spécifiques. 
+                S'il le fait, il sera limité à travailler sur les types que vous avez prévus lorsque vous l'avez écrit, 
+                et il ne supportera pas d'autres types d'objets compatibles qui pourraient être codés dans le futur. 
+                Bien qu'il soit possible de tester les types à l'aide d'outils tels que la <b>fonction intégrée de type</b>
+                <span style="color: #0000ff; background: #60b179">if</span><span style="background: #60b179"> isinstance(o, str)</span>, 
+                la flexibilité de votre code s'en trouve réduite. En général, nous codons en fonction 
+                des interfaces d'objets en Python, et non des types de données
+              </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #0000ff">def</span> times(x: int, y: int) -&gt; int: <span style="color: #008000"># Indications de type</span>
+                  <span style="color: #0000ff">return</span> x * y
+
+                  <span style="color: #0000ff">print</span>(times(2,5))
+                  <span style="color: #0000ff">print</span>(times(<span style="color: #a31515">&quot;Ha&quot;</span>, 5))
+                  <span style="color: #008000">#tous les appels fonctionnent sans erreur, même si nous avons ajouté une indication de type.</span></pre>
+              </div>
+              <p><b>Comme vous commencez tout juste à apprendre Python, vous pouvez attendre d'avoir plus d'expérience avec les indications de type.</b></p>
+            </div>
+          </div>
+
+          <!--slide 102-->
+          <div class="slide">
+            <div class="heading">
+              Functions arguments - Quiz
+            </div>
+            <div class="content grid center">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfIV7OQRYn9t1YZQpqenIwFC5EmDlTekudv1d-qVMGsdYL5Qw/viewform?embedded=true"
+                width="640" height="100%" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…
+              </iframe>
+            </div>
+          </div>
+
+          <!--slide 103-->
+          <div class="slide">
+            <div class="heading">
+              Functions - Valeurs de retour
+            </div>
+            <div class="content">
+              <p>
+                Pour qu'une fonction renvoie une valeur, utilisez l'instruction return :
+              </p>
+              <iframe
+              frameborder="0"
+              height="98%"  
+              src="https://onecompiler.com/embed/python/3yfafcxuv"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="heading">
+              Objects
+            </div>
+          </div>
+        </section>
+
+        <section class="counter">
+          <input type="number" id="tentacles" name="tentacles" min="10" max="100">1 of 6
+        </section>
+
+        <section class="navigation">
+          <button id="full-screen" class="btn-screen show">
+            <i class="fas fa-expand"></i>
+          </button>
+
+          <button id="small-screen" class="btn-screen">
+            <i class="fas fa-compress"></i>
+          </button>
+
+          <button id="left-btn" class="btn">
+            <i class="fas fa-solid fa-caret-left"></i>
+          </button>
+
+          <button id="right-btn" class="btn">
+            <i class="fa-solid fa-caret-right"></i>
+          </button>
+        </section>
+      </div>
+    </div>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
