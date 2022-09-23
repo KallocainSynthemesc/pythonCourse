@@ -1734,368 +1734,6 @@
           <!--slide 64-->
           <div class="slide">
             <div class="heading">
-              if Tests 
-            </div>
-            <div class="content">
-              <div class="flex-container">
-                <div style="width:40%">
-                  <p>Ce chapitre présente l'instruction <b>if</b> de Python, qui est la principale instruction utilisée 
-                    pour sélectionner des actions alternatives en fonction des résultats des tests.
-                  </p>
-                </div>
-                <div style="width:60%;">
-                  <img src="image/ifelse.svg" style="width:100%;">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--slide 65-->
-          <div class="slide">
-            <div class="heading">
-              if Tests - Format général 
-            </div>
-            <div class="content">
-                <p>
-                  Lorsque l'instruction if s'exécute, Python exécute le bloc de code associé au premier test dont l'évaluation est vraie, 
-                  ou le bloc else si tous les tests sont faux. La forme générale d'une instruction if ressemble à ceci
-                </p>
-                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                  <pre style="margin: 0; line-height: 125%">
-                    <span style="color: #008800; font-weight: bold">if</span> test1: <span style="color: #10863d"># if test</span>
-                        statements1 <span style="color: #10863d"># bloc associé</span>
-                    <span style="color: #008800; font-weight: bold">elif</span> test2: <span style="color: #10863d"># Optionnel elifs</span>
-                        statements2
-                    <span style="color: #008800; font-weight: bold">else</span>: <span style="color: #10863d"># Optionnel else</span>
-                        statements3</pre>
-                </div>
-                <br>
-                <p>
-                  <b>Exemple de base</b>
-                </p>
-                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                  <pre style="margin: 0; line-height: 125%">
-                    <span style="color: #008800; font-weight: bold">if</span> <span style="color: #0000DD; font-weight: bold">1</span>:
-                        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&#39;true&#39;</span>)</pre>
-                </div>
-            </div>
-          </div>
-
-          <!--slide 66-->
-          <div class="slide">
-            <div class="heading">
-              if Tests - Format général 
-            </div>
-            <div class="content">
-              <iframe
-              frameborder="0"
-              height="95%"  
-              src="https://onecompiler.com/embed/python/3yfskqnfn"
-              width="100%"
-            ></iframe>
-            </div>
-          </div>
-
-          <!--slide 67-->
-          <div class="slide">
-            <div class="heading">
-              if/else Ternary Expression
-            </div>
-            <div class="content">
-              <p>Parfois, les éléments d'une déclaration sont si simples qu'il semble exagéré de les répartir sur plusieurs lignes.</p>
-              <p>Python nous offre un format d'expression qui nous permet de faire des if/else dans une seule expression. </p>
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">A <span style="color: #333333">=</span> Y <span style="color: #008800; font-weight: bold">if</span> X <span style="color: #008800; font-weight: bold">else</span> Z</pre></div>
-              <p>Navigation exemple</p>
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">
-                direction = <span style="color: #0000FF">&quot;Toulouse&quot;</span>
-                result = <span style="color: #0000FF">&quot;aller à gauche&quot;</span> <span style="color: #000080; font-weight: bold">if</span> direction == <span style="color: #0000FF">&quot;Toulouse&quot;</span> <span style="color: #000080; font-weight: bold">else</span> <span style="color: #0000FF">&quot;aller à droite&quot;</span>
-                <span style="color: #000080; font-weight: bold">print</span>(result) <span style="color: #008800; font-style: italic">#aller à gauche</span></pre>
-              </div>
-            </div>
-          </div>
-                   
-          <!--slide 68-->
-          <div class="slide">
-            <div class="heading">
-              while et for Loops
-            </div>
-            <div class="content">
-              <p>Je vais présenter les les deux principales constructions de boucles du langage - des énoncés qui répètent une action encore et encore</p>
-              <iframe id="loop" src="image/loop.svg" width="45.5%" height="90%"  frameborder="0"></iframe>
-            </div>
-          </div>
-
-          <!--slide 69-->
-          <div class="slide">
-            <div class="heading">
-              while Loops
-            </div>
-            <div class="content">
-              <p>L'instruction while de Python est la construction d'itération la plus générale du langage. En termes simples, 
-                elle exécute de manière répétée un bloc d'instructions (normalement indentées) tant qu'un test situé 
-                en haut de l'instruction continue d'être évalué à une valeur vraie. On l'appelle une "boucle" parce 
-                que le contrôle revient au début de l'instruction jusqu'à ce que le test devienne faux.
-              </p>
-              <div class="flex-container">
-                <div style="width:20%">
-                  <p><b>Format général</b></p>
-                </div>
-                <div style="width:80%">
-                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                    <pre style="margin: 0; line-height: 125%">
-                      <span style="color: #000080; font-weight: bold">while</span> test : <span style="color: #008800; font-style: italic"># Test en boucle</span>
-                          statements <span style="color: #008800; font-style: italic"># Corps de la boucle</span>
-                      <span style="color: #000080; font-weight: bold">else</span> : <span style="color: #008800; font-style: italic"># Optionnel else</span>
-                          déclarations <span style="color: #008800; font-style: italic"># Exécution si la boucle n&#39;a pas été interrompue par break</span></pre>
-                  </div>
-                </div>
-              </div>
-              <br>
-              <div class="flex-container">
-                <div style="width:20%">
-                  <p><b>Exemple</b></p>
-                </div>
-                <div style="width:80%">
-                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                    <pre style="margin: 0; line-height: 125%">
-                      <span style="color: #000080; font-weight: bold">while</span> True :
-                          <span style="color: #000080; font-weight: bold">print</span>(<span style="color: #0000FF">&#39;Here we are now&#39;</span>)</pre>
-                  </div>
-                </div>
-              </div>
-              <img src="image/kurtcobain.svg" class="html-css-logo" style="width:40%; left: 50%; top:62%; height:unset">
-            </div>
-          </div>
-          
-          <!--slide 70-->
-          <div class="slide">
-            <div class="heading">
-              while Loops
-            </div>
-            <div class="content">
-              <p>Le code suivant compte à partir de la valeur de a jusqu'à, mais sans inclure, b. 
-                Nous verrons plus tard une façon plus simple de le faire avec une boucle for Python et la fonction intégrée range.
-              </p>
-              <iframe
-              frameborder="0"
-              height="90%"  
-              src="https://onecompiler.com/embed/python/3yfvq5qgr"
-              width="100%"
-              ></iframe>
-            </div>
-          </div>
-
-          <!--slide 71-->
-          <div class="slide">
-            <div class="heading">
-              break, continue, pass, et le Loop else
-            </div>
-            <div class="content">
-              <p><b>break: </b>Saute hors de la boucle la plus proche (au-delà de l'énoncé de la boucle).</p>
-
-              <p><b>continue: </b>Saut au sommet de la boucle la plus proche (à la ligne d'en-tête de la boucle).</p>
-
-              <p><b>pass: </b>Ne fait rien du tout : il s'agit d'un espace vide pour une déclaration.</p>
-
-              <p><b>Loop else block: </b>S'exécute si et seulement si la boucle est quittée normalement (c'est-à-dire sans coupure).</p>
-
-              <p>En tenant compte des instructions break et continue, le format général de la boucle while se présente comme suit ressemble à ceci :</p>
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">
-                  <span style="color: #000080; font-weight: bold">while</span> test :
-                      declarations
-                      <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">break</span> <span style="color: #008800; font-style: italic"># Quitter la boucle maintenant, ignorer else si présent</span>
-                      <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">continue</span> <span style="color: #008800; font-style: italic"># Aller au début de la boucle maintenant, à test1</span>
-                  <span style="color: #000080; font-weight: bold">else</span> :
-                      statements <span style="color: #008800; font-style: italic"># Exécuter si nous n&#39;avons pas trouvé de &#39;break&#39;.</span></pre>
-              </div>
-            </div>
-          </div>
-
-          <!--slide 72-->
-          <div class="slide">
-            <div class="heading">
-              while Loops - pass
-            </div>
-            <div class="content">
-              <p>Tout d'abord, la déclaration <b>pass</b> est un substitut <b>non opérationnel</b> qui est utilisé lorsque la syntaxe exige une déclaration,
-                 mais que vous <b>n'avez rien d'utile à dire</b>. Elle est souvent utilisée pour coder un corps vide pour une instruction composée.</p>
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">
-                  <span style="color: #000080; font-weight: bold">while</span> True: 
-                      <span style="color: #000080; font-weight: bold">pass</span></pre>
-              </div>
-              <p>Cet exemple ne fait rien pour toujours. Ce n'est probablement pas le programme Python le plus utile jamais écrit 
-                (à moins que vous ne vouliez réchauffer votre ordinateur portable par une froide journée d'hiver !); 
-                franchement, cependant, je ne pouvais pas penser à un meilleur exemple de passe à ce stade de la diapositive.</p>
-
-                <p>Nous ne pouvons pas laisser le corps vide sans obtenir une erreur de syntaxe, donc nous disons pass à la place.</p>
-            </div>
-          </div>
-
-          <!--slide 73-->
-          <div class="slide">
-            <div class="heading">
-              while Loops - continue
-            </div>
-            <div class="content">
-              <p>L'instruction continue provoque un saut immédiat au début d'une boucle. Elle permet aussi parfois d'éviter l'imbrication des instructions</p>
-
-              <p>L'exemple suivant utilise continue pour sauter les nombres impairs. 
-                Ce code imprime tous les nombres pairs inférieurs à 10 et supérieurs ou égaux à 0. Rappelez-vous que 0 signifie 
-                faux et que % est le reste de l'opérateur de division (modulo).
-              </p>
-              <iframe
-              frameborder="0"
-              height="65%"  
-              src="https://onecompiler.com/embed/python/3yfvt9uxn"
-              width="100%"
-              ></iframe>
-            </div>
-          </div>
-
-          <!--slide 74-->
-          <div class="slide">
-            <div class="heading">
-              while Loops - break
-            </div>
-            <div class="content">
-              <p>L'instruction break provoque une sortie immédiate d'une boucle. Comme le code qui la suit dans la boucle n'est pas exécuté 
-                si l'instruction break est atteinte, vous pouvez aussi parfois éviter l'imbrication en incluant une instruction break. 
-                l'imbrication en incluant un break.</p>
-                <iframe
-                frameborder="0"
-                height="80%"  
-                src="https://onecompiler.com/embed/python/3yfvuuxdr"
-                width="100%"
-                ></iframe>
-            </div>
-          </div>
-
-          <!--slide 75-->
-          <div class="slide">
-            <div class="heading">
-              while Loops - Loop else
-            </div>
-            <div class="content">
-              <p>Comme vous l'avez appris précédemment, la clause <b>else</b> est utilisée avec l'instruction if. 
-                Python permet également d'utiliser le mot-clé <b>else</b> avec les boucles <b>while</b>. Le bloc <b>else</b> apparaît après le corps de la boucle.
-                 Les instructions du bloc <b>else</b> seront exécutées après la fin de toutes les itérations. 
-                 Le programme ne sort de la boucle qu'après l'exécution du bloc <b>else</b>.</p>
-
-                 <iframe
-                 frameborder="0"
-                 height="80%"  
-                 src="https://onecompiler.com/embed/python/3yfvwwxsj"
-                 width="100%"
-                 ></iframe>
-            </div>
-          </div>
-
-          <!--slide 76-->
-          <div class="slide">
-            <div class="heading">
-              while Loops - exercise
-            </div>
-            <div class="content">
-              <p>Comptez de 1 à 100 en utilisant une boucle while et affichez chaque étape sur la console avec print().</p>
-
-                  <iframe
-                  frameborder="0"
-                  height="98%"  
-                  src="https://onecompiler.com/embed/python/3yfvxq6rq"
-                  width="100%"
-                  ></iframe>
-            </div>
-          </div>
-
-          <!--slide 77-->
-          <div class="slide">
-            <div class="heading">
-              while Loops - exercise
-            </div>
-            <div class="content">
-              <p>imprimer tous les éléments d'une liste en utilisant une boucle while</p>
-
-              <iframe
-              frameborder="0"
-              height="98%"  
-              src="https://onecompiler.com/embed/python/3yfvy9me9"
-              width="100%"
-              ></iframe>
-            </div>
-          </div>
-
-          <!--slide 78-->
-          <div class="slide">
-            <div class="heading">
-              for Loops
-            </div>
-            <div class="content">
-              <p>La boucle for est un itérateur générique en Python : elle peut parcourir les éléments d'une séquence ordonnée ou d'un autre objet itérable.</p>
-              <br>
-              <p><b>Format général</b></p>
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">
-                  <span style="color: #000080; font-weight: bold">for</span> target <span style="font-weight: bold">in</span> object : <span style="color: #008800; font-style: italic"># Affecter les éléments de l&#39;objet à la cible</span>
-                      statements <span style="color: #008800; font-style: italic"># Corps de la boucle répétée : utilise la cible</span>
-                  <span style="color: #000080; font-weight: bold">else</span> : <span style="color: #008800; font-style: italic"># Partie else facultative</span>
-                      statements <span style="color: #008800; font-style: italic"># Si nous n&#39;avons pas atteint un &#39;break&#39; (pause)</span></pre>
-              </div>
-              <br>
-              <p>Lorsque Python exécute une boucle for, il affecte les éléments de l'objet itérable à la cible un par un et exécute 
-                le corps de la boucle pour chacun. Le corps de la boucle utilise généralement la cible d'affectation pour faire 
-                référence à l'élément actuel de la séquence comme s'il s'agissait d'un curseur qui se déplace dans la séquence.
-              </p>
-            </div>
-          </div>
-
-          <!--slide 78-->
-          <div class="slide">
-            <div class="heading">
-              for Loops - break, continue, pass, et le Loop else
-            </div>
-            <div class="content">
-              <p>L'instruction for prend également en charge un bloc <b>else</b> facultatif, 
-                qui fonctionne exactement comme dans une boucle <b>while</b> - il est exécuté 
-                si la boucle sort sans tomber sur une instruction <b>break</b> (c'est-à-dire si 
-                tous les éléments de la séquence ont été visités). Les instructions <b>break</b> 
-                et continue introduites précédemment fonctionnent également de la même manière 
-                dans une boucle <b>for</b> que dans une boucle <b>while</b>. Le format complet de la boucle <b>for</b> 
-                peut être décrit de la manière suivante</p>
-                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                  <pre style="margin: 0; line-height: 125%">
-                    <span style="color: #000080; font-weight: bold">for</span> target <span style="font-weight: bold">in</span> object : <span style="color: #008800; font-style: italic"># Affecter les éléments de l&#39;objet à la cible</span>
-                        declarations
-                        <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">break</span> <span style="color: #008800; font-style: italic"># Quitter la boucle maintenant, passer à autre chose</span>
-                        <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">continue</span> <span style="color: #008800; font-style: italic"># Aller au début de la boucle maintenant</span>
-                    <span style="color: #000080; font-weight: bold">else</span> :
-                        statements <span style="color: #008800; font-style: italic"># Si nous n&#39;avons pas trouvé de &#39;break&#39;.</span></pre>
-                </div>
-            </div>
-          </div>
-
-          <!--slide 77-->
-          <div class="slide">
-            <div class="heading">
-              for Loops - exemple
-            </div>
-            <div class="content">
-              <p>imprimer tous les éléments d'une liste en utilisant une boucle while</p>
-
-              <iframe
-              frameborder="0"
-              height="98%"  
-              src="https://onecompiler.com/embed/python/3yfw6b33g"
-              width="100%"
-              ></iframe>
-            </div>
-          </div>
-
-          <!--slide 79-->
-          <div class="slide">
-            <div class="heading">
               Functions
             </div>
             <div class="content">
@@ -2117,7 +1755,7 @@
             </div>
           </div>
 
-          <!--slide 80-->
+          <!--slide 65-->
           <div class="slide">
             <div class="heading">
               Functions - Pourquoi utiliser des fonctions ?
@@ -2142,7 +1780,7 @@
             </div>
           </div>
 
-          <!--slide 81-->
+          <!--slide 66-->
           <div class="slide">
             <div class="heading">
               Functions - def Statements ?
@@ -2165,7 +1803,7 @@
             </div>
           </div>
 
-          <!--slide 82-->
+          <!--slide 67-->
           <div class="slide">
             <div class="heading">
               Functions - Simple
@@ -2180,7 +1818,7 @@
             </div>
           </div>
 
-          <!--slide 83-->
+          <!--slide 68-->
           <div class="slide">
             <div class="heading">
               Functions - Calls/Appelle
@@ -2212,7 +1850,7 @@
             </div>
           </div>
 
-          <!--slide 84-->
+          <!--slide 69-->
           <div class="slide">
             <div class="heading">
               Functions - Polymorphism
@@ -2227,7 +1865,7 @@
             </div>
           </div>
 
-          <!--slide 85-->
+          <!--slide 70-->
           <div class="slide">
             <div class="heading">
               Functions - Scopes
@@ -2251,7 +1889,7 @@
             </div>
           </div>
           
-          <!--slide 86-->
+          <!--slide 71-->
           <div class="slide">
             <div class="heading">
               Functions - Scopes
@@ -2282,7 +1920,7 @@
             </div>
           </div>
 
-          <!--slide 87-->
+          <!--slide 72-->
           <div class="slide">
             <div class="heading">
               Functions - Scopes (LEGB lookup rule)
@@ -2304,7 +1942,7 @@
             </div>
           </div>
 
-          <!--slide 88-->
+          <!--slide 73-->
           <div class="slide">
             <div class="heading">
               Functions - La déclaration globale
@@ -2330,7 +1968,7 @@
             </div>
           </div>
 
-          <!--slide 89-->
+          <!--slide 74-->
           <div class="slide">
             <div class="heading">
               Functions - Nested Scope Examples
@@ -2338,8 +1976,8 @@
             <div class="content">
               <p>le <b>def</b> est simplement une instruction exécutable, qui peut apparaître partout où une autre instruction peut apparaître
                 , y compris imbriquée dans un autre <b>def</b>. Ici, le <b>def</b> imbriqué s'exécute pendant qu'un appel à la fonction <b>f1</b> s'exécute ;
-                 il génère une fonction et l'assigne au nom <b>f2</b>, une variable locale dans le scope local de <b>f1</b>. En un sens, <b>f2</b> est une 
-                 fonction temporaire qui ne vit que pendant l'exécution de (et n'est visible que par le code de) la fonction <b>f1</b> qui l'entoure
+                  il génère une fonction et l'assigne au nom <b>f2</b>, une variable locale dans le scope local de <b>f1</b>. En un sens, <b>f2</b> est une 
+                  fonction temporaire qui ne vit que pendant l'exécution de (et n'est visible que par le code de) la fonction <b>f1</b> qui l'entoure
               </p>
               <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
                 <pre style="margin: 0; line-height: 125%">
@@ -2354,7 +1992,7 @@
             </div>
           </div>
 
-          <!--slide 90-->
+          <!--slide 75-->
           <div class="slide">
             <div class="heading">
               Functions - nonlocal
@@ -2386,7 +2024,7 @@
             </div>
           </div>
 
-          <!--slide 91-->
+          <!--slide 76-->
           <div class="slide">
             <div class="heading">
               Quiz - Scopes
@@ -2399,7 +2037,7 @@
             </div>
           </div>
 
-          <!--slide 92-->
+          <!--slide 77-->
           <div class="slide">
             <div class="heading">
               Functions - Arguments
@@ -2408,7 +2046,7 @@
               <div class="flex-container">
                 <div>
                   <p>Les diapositives suivantes poursuivent l'histoire des fonctions en étudiant les concepts du passage d'arguments en Python,
-                     c'est-à-dire la façon dont les objets sont envoyés aux fonctions en tant que données d'entrée. 
+                      c'est-à-dire la façon dont les objets sont envoyés aux fonctions en tant que données d'entrée. 
                   </p>
                   <p>Comme nous le verrons, <b>les arguments</b> (aussi appelés paramètres) sont affectés à des <b>noms dans une fonction</b>, 
                     mais ils ont plus à voir avec les références d'objets qu'avec les scopes de variables.</p>
@@ -2421,7 +2059,7 @@
             </div>
           </div>
 
-          <!--slide 93-->
+          <!--slide 78-->
           <div class="slide">
             <div class="heading">
               Functions - Argument-Passing Basics
@@ -2445,7 +2083,7 @@
             </div>
           </div>
 
-          <!--slide 94-->
+          <!--slide 79-->
           <div class="slide">
             <div class="heading">
               Functions - Argument-Passing Basics
@@ -2475,7 +2113,7 @@
             </div>
           </div>
 
-          <!--slide 95-->
+          <!--slide 80-->
           <div class="slide">
             <div class="heading">
               Functions - Argument-Passing Basics
@@ -2518,7 +2156,7 @@
             </div>
           </div>
 
-          <!--slide 96-->
+          <!--slide 81-->
           <div class="slide">
             <div class="heading">
               Functions - Nombre d'arguments
@@ -2546,7 +2184,7 @@
             </div>
           </div>
 
-          <!--slide 97-->
+          <!--slide 82-->
           <div class="slide">
             <div class="heading">
               Functions - Arguments arbitraires, *args
@@ -2566,7 +2204,7 @@
             </div>
           </div>
 
-          <!--slide 98-->
+          <!--slide 83-->
           <div class="slide">
             <div class="heading">
               Functions - Arguments de mots-clés
@@ -2596,7 +2234,7 @@
             </div>
           </div>
 
-          <!--slide 99-->
+          <!--slide 84-->
           <div class="slide">
             <div class="heading">
               Functions - Arguments arbitraires, **
@@ -2614,7 +2252,7 @@
             </div>
           </div>
 
-          <!--slide 100-->
+          <!--slide 85-->
           <div class="slide">
             <div class="heading">
               Functions - Paramètre Valeur par défaut
@@ -2635,7 +2273,7 @@
             </div>
           </div>
 
-          <!--slide 101-->
+          <!--slide 86-->
           <div class="slide">
             <div class="heading">
               Functions - Indications de type
@@ -2662,7 +2300,7 @@
             </div>
           </div>
 
-          <!--slide 102-->
+          <!--slide 87-->
           <div class="slide">
             <div class="heading">
               Functions arguments - Quiz
@@ -2675,7 +2313,7 @@
             </div>
           </div>
 
-          <!--slide 103-->
+          <!--slide 88-->
           <div class="slide">
             <div class="heading">
               Functions - Valeurs de retour
@@ -2693,6 +2331,368 @@
             </div>
           </div>
 
+          <!--slide 89-->
+          <div class="slide">
+            <div class="heading">
+              if Tests 
+            </div>
+            <div class="content">
+              <div class="flex-container">
+                <div style="width:40%">
+                  <p>Ce chapitre présente l'instruction <b>if</b> de Python, qui est la principale instruction utilisée 
+                    pour sélectionner des actions alternatives en fonction des résultats des tests.
+                  </p>
+                </div>
+                <div style="width:60%;">
+                  <img src="image/ifelse.svg" style="width:100%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 90-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Format général 
+            </div>
+            <div class="content">
+                <p>
+                  Lorsque l'instruction if s'exécute, Python exécute le bloc de code associé au premier test dont l'évaluation est vraie, 
+                  ou le bloc else si tous les tests sont faux. La forme générale d'une instruction if ressemble à ceci
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">if</span> test1: <span style="color: #10863d"># if test</span>
+                        statements1 <span style="color: #10863d"># bloc associé</span>
+                    <span style="color: #008800; font-weight: bold">elif</span> test2: <span style="color: #10863d"># Optionnel elifs</span>
+                        statements2
+                    <span style="color: #008800; font-weight: bold">else</span>: <span style="color: #10863d"># Optionnel else</span>
+                        statements3</pre>
+                </div>
+                <br>
+                <p>
+                  <b>Exemple de base</b>
+                </p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #008800; font-weight: bold">if</span> <span style="color: #0000DD; font-weight: bold">1</span>:
+                        <span style="color: #008800; font-weight: bold">print</span>(<span style="background-color: #fff0f0">&#39;true&#39;</span>)</pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 91-->
+          <div class="slide">
+            <div class="heading">
+              if Tests - Format général 
+            </div>
+            <div class="content">
+              <iframe
+              frameborder="0"
+              height="95%"  
+              src="https://onecompiler.com/embed/python/3yfskqnfn"
+              width="100%"
+            ></iframe>
+            </div>
+          </div>
+
+          <!--slide 92-->
+          <div class="slide">
+            <div class="heading">
+              if/else Ternary Expression
+            </div>
+            <div class="content">
+              <p>Parfois, les éléments d'une déclaration sont si simples qu'il semble exagéré de les répartir sur plusieurs lignes.</p>
+              <p>Python nous offre un format d'expression qui nous permet de faire des if/else dans une seule expression. </p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">A <span style="color: #333333">=</span> Y <span style="color: #008800; font-weight: bold">if</span> X <span style="color: #008800; font-weight: bold">else</span> Z</pre></div>
+              <p>Navigation exemple</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                direction = <span style="color: #0000FF">&quot;Toulouse&quot;</span>
+                result = <span style="color: #0000FF">&quot;aller à gauche&quot;</span> <span style="color: #000080; font-weight: bold">if</span> direction == <span style="color: #0000FF">&quot;Toulouse&quot;</span> <span style="color: #000080; font-weight: bold">else</span> <span style="color: #0000FF">&quot;aller à droite&quot;</span>
+                <span style="color: #000080; font-weight: bold">print</span>(result) <span style="color: #008800; font-style: italic">#aller à gauche</span></pre>
+              </div>
+            </div>
+          </div>
+                   
+          <!--slide 93-->
+          <div class="slide">
+            <div class="heading">
+              while et for Loops
+            </div>
+            <div class="content">
+              <p>Je vais présenter les les deux principales constructions de boucles du langage - des énoncés qui répètent une action encore et encore</p>
+              <iframe id="loop" src="image/loop.svg" width="45.5%" height="90%"  frameborder="0"></iframe>
+            </div>
+          </div>
+
+          <!--slide 94-->
+          <div class="slide">
+            <div class="heading">
+              while Loops
+            </div>
+            <div class="content">
+              <p>L'instruction while de Python est la construction d'itération la plus générale du langage. En termes simples, 
+                elle exécute de manière répétée un bloc d'instructions (normalement indentées) tant qu'un test situé 
+                en haut de l'instruction continue d'être évalué à une valeur vraie. On l'appelle une "boucle" parce 
+                que le contrôle revient au début de l'instruction jusqu'à ce que le test devienne faux.
+              </p>
+              <div class="flex-container">
+                <div style="width:20%">
+                  <p><b>Format général</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">while</span> test : <span style="color: #008800; font-style: italic"># Test en boucle</span>
+                          statements <span style="color: #008800; font-style: italic"># Corps de la boucle</span>
+                      <span style="color: #000080; font-weight: bold">else</span> : <span style="color: #008800; font-style: italic"># Optionnel else</span>
+                          déclarations <span style="color: #008800; font-style: italic"># Exécution si la boucle n&#39;a pas été interrompue par break</span></pre>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="flex-container">
+                <div style="width:20%">
+                  <p><b>Exemple</b></p>
+                </div>
+                <div style="width:80%">
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">
+                      <span style="color: #000080; font-weight: bold">while</span> True :
+                          <span style="color: #000080; font-weight: bold">print</span>(<span style="color: #0000FF">&#39;Here we are now&#39;</span>)</pre>
+                  </div>
+                </div>
+              </div>
+              <img src="image/kurtcobain.svg" class="html-css-logo" style="width:40%; left: 50%; top:62%; height:unset">
+            </div>
+          </div>
+          
+          <!--slide 95-->
+          <div class="slide">
+            <div class="heading">
+              while Loops
+            </div>
+            <div class="content">
+              <p>Le code suivant compte à partir de la valeur de a jusqu'à, mais sans inclure, b. 
+                Nous verrons plus tard une façon plus simple de le faire avec une boucle for Python et la fonction intégrée range.
+              </p>
+              <iframe
+              frameborder="0"
+              height="90%"  
+              src="https://onecompiler.com/embed/python/3yfvq5qgr"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 96-->
+          <div class="slide">
+            <div class="heading">
+              break, continue, pass, et le Loop else
+            </div>
+            <div class="content">
+              <p><b>break: </b>Saute hors de la boucle la plus proche (au-delà de l'énoncé de la boucle).</p>
+
+              <p><b>continue: </b>Saut au sommet de la boucle la plus proche (à la ligne d'en-tête de la boucle).</p>
+
+              <p><b>pass: </b>Ne fait rien du tout : il s'agit d'un espace vide pour une déclaration.</p>
+
+              <p><b>Loop else block: </b>S'exécute si et seulement si la boucle est quittée normalement (c'est-à-dire sans coupure).</p>
+
+              <p>En tenant compte des instructions break et continue, le format général de la boucle while se présente comme suit ressemble à ceci :</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">while</span> test :
+                      declarations
+                      <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">break</span> <span style="color: #008800; font-style: italic"># Quitter la boucle maintenant, ignorer else si présent</span>
+                      <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">continue</span> <span style="color: #008800; font-style: italic"># Aller au début de la boucle maintenant, à test1</span>
+                  <span style="color: #000080; font-weight: bold">else</span> :
+                      statements <span style="color: #008800; font-style: italic"># Exécuter si nous n&#39;avons pas trouvé de &#39;break&#39;.</span></pre>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 97-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - pass
+            </div>
+            <div class="content">
+              <p>Tout d'abord, la déclaration <b>pass</b> est un substitut <b>non opérationnel</b> qui est utilisé lorsque la syntaxe exige une déclaration,
+                 mais que vous <b>n'avez rien d'utile à dire</b>. Elle est souvent utilisée pour coder un corps vide pour une instruction composée.</p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">while</span> True: 
+                      <span style="color: #000080; font-weight: bold">pass</span></pre>
+              </div>
+              <p>Cet exemple ne fait rien pour toujours. Ce n'est probablement pas le programme Python le plus utile jamais écrit 
+                (à moins que vous ne vouliez réchauffer votre ordinateur portable par une froide journée d'hiver !); 
+                franchement, cependant, je ne pouvais pas penser à un meilleur exemple de passe à ce stade de la diapositive.</p>
+
+                <p>Nous ne pouvons pas laisser le corps vide sans obtenir une erreur de syntaxe, donc nous disons pass à la place.</p>
+            </div>
+          </div>
+
+          <!--slide 98-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - continue
+            </div>
+            <div class="content">
+              <p>L'instruction continue provoque un saut immédiat au début d'une boucle. Elle permet aussi parfois d'éviter l'imbrication des instructions</p>
+
+              <p>L'exemple suivant utilise continue pour sauter les nombres impairs. 
+                Ce code imprime tous les nombres pairs inférieurs à 10 et supérieurs ou égaux à 0. Rappelez-vous que 0 signifie 
+                faux et que % est le reste de l'opérateur de division (modulo).
+              </p>
+              <iframe
+              frameborder="0"
+              height="65%"  
+              src="https://onecompiler.com/embed/python/3yfvt9uxn"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 99-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - break
+            </div>
+            <div class="content">
+              <p>L'instruction break provoque une sortie immédiate d'une boucle. Comme le code qui la suit dans la boucle n'est pas exécuté 
+                si l'instruction break est atteinte, vous pouvez aussi parfois éviter l'imbrication en incluant une instruction break. 
+                l'imbrication en incluant un break.</p>
+                <iframe
+                frameborder="0"
+                height="80%"  
+                src="https://onecompiler.com/embed/python/3yfvuuxdr"
+                width="100%"
+                ></iframe>
+            </div>
+          </div>
+
+          <!--slide 100-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - Loop else
+            </div>
+            <div class="content">
+              <p>Comme vous l'avez appris précédemment, la clause <b>else</b> est utilisée avec l'instruction if. 
+                Python permet également d'utiliser le mot-clé <b>else</b> avec les boucles <b>while</b>. Le bloc <b>else</b> apparaît après le corps de la boucle.
+                 Les instructions du bloc <b>else</b> seront exécutées après la fin de toutes les itérations. 
+                 Le programme ne sort de la boucle qu'après l'exécution du bloc <b>else</b>.</p>
+
+                 <iframe
+                 frameborder="0"
+                 height="80%"  
+                 src="https://onecompiler.com/embed/python/3yfvwwxsj"
+                 width="100%"
+                 ></iframe>
+            </div>
+          </div>
+
+          <!--slide 101-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - exercise
+            </div>
+            <div class="content">
+              <p>Comptez de 1 à 100 en utilisant une boucle while et affichez chaque étape sur la console avec print().</p>
+
+                  <iframe
+                  frameborder="0"
+                  height="98%"  
+                  src="https://onecompiler.com/embed/python/3yfvxq6rq"
+                  width="100%"
+                  ></iframe>
+            </div>
+          </div>
+
+          <!--slide 102-->
+          <div class="slide">
+            <div class="heading">
+              while Loops - exercise
+            </div>
+            <div class="content">
+              <p>imprimer tous les éléments d'une liste en utilisant une boucle while</p>
+
+              <iframe
+              frameborder="0"
+              height="98%"  
+              src="https://onecompiler.com/embed/python/3yfvy9me9"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
+          <!--slide 103-->
+          <div class="slide">
+            <div class="heading">
+              for Loops
+            </div>
+            <div class="content">
+              <p>La boucle for est un itérateur générique en Python : elle peut parcourir les éléments d'une séquence ordonnée ou d'un autre objet itérable.</p>
+              <br>
+              <p><b>Format général</b></p>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">
+                  <span style="color: #000080; font-weight: bold">for</span> target <span style="font-weight: bold">in</span> object : <span style="color: #008800; font-style: italic"># Affecter les éléments de l&#39;objet à la cible</span>
+                      statements <span style="color: #008800; font-style: italic"># Corps de la boucle répétée : utilise la cible</span>
+                  <span style="color: #000080; font-weight: bold">else</span> : <span style="color: #008800; font-style: italic"># Partie else facultative</span>
+                      statements <span style="color: #008800; font-style: italic"># Si nous n&#39;avons pas atteint un &#39;break&#39; (pause)</span></pre>
+              </div>
+              <br>
+              <p>Lorsque Python exécute une boucle for, il affecte les éléments de l'objet itérable à la cible un par un et exécute 
+                le corps de la boucle pour chacun. Le corps de la boucle utilise généralement la cible d'affectation pour faire 
+                référence à l'élément actuel de la séquence comme s'il s'agissait d'un curseur qui se déplace dans la séquence.
+              </p>
+            </div>
+          </div>
+
+          <!--slide 104-->
+          <div class="slide">
+            <div class="heading">
+              for Loops - break, continue, pass, et le Loop else
+            </div>
+            <div class="content">
+              <p>L'instruction for prend également en charge un bloc <b>else</b> facultatif, 
+                qui fonctionne exactement comme dans une boucle <b>while</b> - il est exécuté 
+                si la boucle sort sans tomber sur une instruction <b>break</b> (c'est-à-dire si 
+                tous les éléments de la séquence ont été visités). Les instructions <b>break</b> 
+                et continue introduites précédemment fonctionnent également de la même manière 
+                dans une boucle <b>for</b> que dans une boucle <b>while</b>. Le format complet de la boucle <b>for</b> 
+                peut être décrit de la manière suivante</p>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">
+                    <span style="color: #000080; font-weight: bold">for</span> target <span style="font-weight: bold">in</span> object : <span style="color: #008800; font-style: italic"># Affecter les éléments de l&#39;objet à la cible</span>
+                        declarations
+                        <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">break</span> <span style="color: #008800; font-style: italic"># Quitter la boucle maintenant, passer à autre chose</span>
+                        <span style="color: #000080; font-weight: bold">if</span> test : <span style="color: #000080; font-weight: bold">continue</span> <span style="color: #008800; font-style: italic"># Aller au début de la boucle maintenant</span>
+                    <span style="color: #000080; font-weight: bold">else</span> :
+                        statements <span style="color: #008800; font-style: italic"># Si nous n&#39;avons pas trouvé de &#39;break&#39;.</span></pre>
+                </div>
+            </div>
+          </div>
+
+          <!--slide 105-->
+          <div class="slide">
+            <div class="heading">
+              for Loops - exemple
+            </div>
+            <div class="content">
+              <p>imprimer tous les éléments d'une liste en utilisant une boucle while</p>
+
+              <iframe
+              frameborder="0"
+              height="98%"  
+              src="https://onecompiler.com/embed/python/3yfw6b33g"
+              width="100%"
+              ></iframe>
+            </div>
+          </div>
+
           <div class="slide">
             <div class="heading">
               Objects
@@ -2701,7 +2701,7 @@
         </section>
 
         <section class="counter">
-          <input type="number" id="tentacles" name="tentacles" min="10" max="100">1 of 6
+          <input type="number" id="index" name="index" min="1" max="100" value="1" style="width:20%"> of 105
         </section>
 
         <section class="navigation">

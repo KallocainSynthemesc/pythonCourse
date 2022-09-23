@@ -4,6 +4,7 @@ let slides = document.querySelectorAll(".slide");
 let currentSlide = document.querySelector(".slide.show");
 
 var slideNumber = document.querySelector(".counter");
+var slideIndex = document.querySelector("#index");
 var toLeftBtn = document.querySelector("#left-btn");
 var toRightBtn = document.querySelector("#right-btn");
 
@@ -30,7 +31,7 @@ function init() {
 // handle clicks on left and right icons
 toLeftBtn.addEventListener("click", moveToLeftSlide);
 toRightBtn.addEventListener("click", moveToRightSlide);
-
+slideIndex.addEventListener("change", changeByIndex);
 // handle full screen and small screen modes
 toFullScreenBtn.addEventListener("click", fullScreenMode);
 toSmallScreenBtn.addEventListener("click", smallScreenMode);
@@ -107,5 +108,15 @@ function smallScreenMode() {
 
 // update counter
 function setSlideNo() {
-  slideNumber.innerText = `${currentSlideNo} of ${totalSides}`;
+  slideIndex.value = currentSlideNo
+  slideIndex.innerText = ` of ${totalSides}`;
+}
+
+function changeByIndex(){
+  var tempSlide = currentSlide;
+  currentSlide = slides[slideIndex.value -1];
+  tempSlide.classList.remove("show");
+  currentSlide.classList.add("show");
+
+  init();
 }
